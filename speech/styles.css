@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #0c1a30;
+    color: #f5f5f5;
+    overflow-x: hidden; /* Desactivar desplazamiento horizontal del body */
+    
+}
+
+/* Estilo para agregar espacio en la parte superior de la caja principal */
+#main-box {
+    margin-top: 20px; /* Espacio desde el borde superior */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    max-height: 100vh; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto; /* Activa el desplazamiento vertical solo en este contenedor */
+}
+
+/* Fondo animado */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/stars.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo de la barra */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Degradado del pulgar */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #4c1a9e, #2b65e6); /* Cambio de color al pasar el cursor */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(45deg, #350e66, #1a45b4); /* Efecto al hacer clic */
+}
+
+
+/* Estilo para el contenido con desplazamiento */
+#scrollable-content {
+    padding: 10px;
+    /* Elimina la altura fija */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto; /* Desactivar desplazamiento vertical del body */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        opacity: 1; /* Termina visible */
+    }
+}
+
+/* Estilo del encabezado */
+h1 {
+    text-align: center; /* Centrar texto */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 25px; /* Margen inferior */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Contenedor para botones */
+#button-container {
+    display: flex; /* Usar flexbox para distribución */
+    flex-direction: column; /* Dirección en columna */
+    gap: 15px; /* Espacio entre botones */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 15px; /* Relleno interno */
+    background-color: #ff4081; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 12px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia cursor al pasar por encima */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra de botón */
+}
+
+/* Efecto al pasar el cursor sobre los botones */
+button:hover {
+    background-color: #ff79b0; /* Cambio de color */
+    transform: translateY(-5px); /* Elevar el botón */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+/*COLOR DE ETIQUETAS POR SEPARADO*/
+
+strong {
+    color: #FF6F61; /* Coral Claro */
+    background-color: rgba(255, 105, 97, 0.2); /* Fondo semitransparente para más énfasis */
+    padding: 2px 4px; /* Espaciado */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+h2 {
+    color: #00BFFF; /* Azul Cielo */
+    font-size: 2em;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 191, 255, 0.5);
+}
+
+
+
+/* Contenido de los mensajes de voz */
+.speech-content {
+    display: none; /* Ocultar por defecto */
+    margin-top: 15px; /* Margen superior */
+    padding: 20px; /* Relleno interno */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilo del encabezado dentro del contenido de voz */
+.speech-content h2 {
+    font-size: 2em; /* Tamaño de fuente grande */
+    color: #ff4081; /* Color del encabezado */
+}
+
+/* Estilo del párrafo dentro del contenido de voz */
+.speech-content p {
+    margin: 0; /* Sin margen */
+    padding: 5px 0; /* Relleno vertical */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Ajustes para iconos y letras */
+.icon {
+    width: 30px; /* Tamaño de los iconos */
+    height: 30px; /* Tamaño de los iconos */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+/* Estilo de las filas de información */
+.info-row {
+    white-space: pre; /* Mantiene el formato visual */
+    font-family: Arial, sans-serif; /* Fuente utilizada */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #f9f9f9; /* Color de fondo blanco (más claro) */
+    color: #333; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 85%; /* Ancho completo del contenedor padre */
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 10px; /* Espaciado inferior */
+    white-space: pre-line; /* Preserva saltos de línea sin espacios extra */
+}
+
+
+/* Estilo del botón de copiar */
+.copy-btn {
+    background-color: #4caf50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno */
+    cursor: pointer; /* Cambia cursor al pasar por encima */
+    font-size: 14px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave del color */
+}
+
+/* Efecto al pasar el cursor sobre el botón de copiar */
+.copy-btn:hover {
+    background-color: #45a049; /* Cambio de color */
+}
+
+/* Estilo del mensaje de copiado */
+.copy-message {
+    color: #ffffff; /* Color del texto del mensaje */
+    font-size: 14px; /* Tamaño de fuente */
+    margin-top: 5px; /* Margen superior */
+    background-color: rgb(14, 206, 116); /* Fondo semitransparente */
+    padding: 5px 10px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    visibility: hidden; /* Ocultar por defecto */
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave para la visibilidad */
+}
+
+/* Estilo de las imágenes dentro del contenido de voz */
+.speech-content img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 15px; /* Margen superior */
+}
+
+.return-button {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    background-color: #ff6666; /* Color rojizo claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.return-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Brillo más intenso */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    background-color: #ff4d4d; /* Color ligeramente más oscuro al pasar el mouse */
+}

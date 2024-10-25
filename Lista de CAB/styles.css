@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    margin: 20px auto; /* Centrado horizontal */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+    background-color: #f0f4c3; /* Color de fondo suave */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    max-width: 600px; /* Ancho máximo del h1 */
+    color: #333; /* Color del texto */
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+}
+
+/* Cambia el color de fondo y aplica un efecto al pasar el mouse */
+h1:hover {
+    background-color: #e6ee9c; /* Color de fondo al hacer hover */
+    transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+}
+
+
+
+/* SECCIÓN DE FILTROS */
+#filters {
+    margin: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+#filters:hover {
+    background-color: #f1f1f1; /* Cambia el fondo al pasar el mouse */
+}
+
+#filters label {
+    font-size: 16px;
+    margin: 0 10px; /* Espacio entre etiquetas */
+    padding: 5px; /* Espacio interno */
+    color: #333; /* Color del texto */
+}
+
+#filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 6px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para el select */
+    appearance: none; /* Quitar el estilo por defecto */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave para el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+    position: relative; /* Para el pseudo-elemento */
+}
+
+#filters select::after {
+    content: '▼'; /* Icono de flecha */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Color de la flecha */
+}
+
+#filters select:hover {
+    border-color: #ff6600; /* Color del borde al pasar el mouse */
+}
+
+#filters select:focus {
+    outline: none; /* Elimina el contorno */
+    border-color: #9eb7d1; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(145, 161, 179, 0.5); /* Sombra al enfocar */
+}
+
+#filters option {
+    padding: 10px;
+}
+
+#filters option:hover {
+    background-color: #e0f7fa; /* Color de fondo al pasar sobre la opción */
+    color: #333; /* Color del texto */
+}
+
+#filters button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ff6600; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+#filters button:hover {
+    background-color: #e55a00; /* Color del botón al pasar el mouse */
+}
+
+/* ESTILOS PARA LA TABLA */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave para el borde */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumentar el espaciado para mejor legibilidad */
+    text-align: left;
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+th {
+    background-color: #f39912; /* Color del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 15px; /* Padding más consistente */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para las celdas del cuerpo de la tabla */
+tbody td {
+    font-size: 14px;
+    padding: 12px; /* Aumentar padding para mejor legibilidad */
+    border: 1px solid #ddd; /* Bordes suaves */
+    text-align: left;
+    transition: background-color 0.3s ease; /* Transiciones suaves */
+}
+
+tbody td span {
+    color: #ff4c4c; /* Color del guion */
+    font-weight: bold; /* Hacer el guion más prominente */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+tbody td:hover {
+    background-color: #e96180; /* Color de fondo en hover */
+}
+
+tbody td:hover span {
+    color: #fff; /* Cambia el color del guion al pasar el mouse sobre la celda */
+}
+
+/* Color alternativo para filas */
+tr:nth-child(even) {
+    background-color: rgb(249, 249, 249); /* Color de fondo para filas pares */
+}
+
+tr:hover {
+    background-color: #ffe6b2; /* Color de fondo al pasar el mouse */
+}
+
+tr:hover td {
+    color: #333; /* Color del texto al pasar el mouse */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 600px) {
+    tbody td {
+        font-size: 12px; /* Reducir tamaño de fuente en móviles */
+        padding: 8px; /* Ajustar padding en móviles */
+    }
+    
+    th {
+        font-size: 14px; /* Reducir tamaño de fuente en el encabezado en móviles */
+    }
+}
+
+/* Botón para volver a la página principal */
+.back-button-container {
+    position: absolute; /* Posiciona el contenedor en relación al main */
+    top: 20px; /* Espaciado desde el borde superior */
+    right: 20px; /* Espaciado desde el borde derecho */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+
+.back-button {
+    background-color: hsl(32, 91%, 63%); /* Color verde */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em; /* Tamaño de fuente consistente */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    border: none; /* Sin borde */
+}
+
+.back-button:hover {
+    background-color: #fca138; /* Color verde oscuro al pasar el mouse */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}

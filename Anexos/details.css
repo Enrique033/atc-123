@@ -1,0 +1,549 @@
+/* Reseteo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* Fondo claro y suave */
+  color: #333;
+  flex-direction: column;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #36363a; /* Azul oscuro */
+  padding: 9px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permitir que el contenido se ajuste */
+}
+
+.header-container :hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500; /* Peso de fuente ajustado */
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que el menú se ajuste */
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #ffffff;
+  padding: 12px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+}
+
+nav ul li:hover a {
+  background-color: #E94560; /* Color vibrante para el hover */
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Submenús */
+.submenu {
+  display: none; /* Oculta el submenú inicialmente */
+  position: absolute;
+  top: 100%; /* Ajustar para que se vea justo debajo */
+  left: 0;
+  background-color: white; 
+  padding: 5px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease, visibility 0.2s ease; /* Añadir transición */
+  opacity: 0; /* Comienza oculto */
+}
+
+nav ul li:hover .submenu {
+  display: block; /* Muestra el submenú al pasar el ratón */
+  opacity: 1; /* Muestra el submenú */
+  visibility: visible; /* Hace visible */
+}
+
+.submenu li {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submenu li:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.03); /* Efecto de aumento más sutil */
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  flex: 1; /* Permite que el contenedor principal empuje el footer */
+}
+
+/* Estilo activo del menú */
+.active {
+  border-bottom: 2px solid #E94560; /* Color de la línea */
+  font-weight: bold; /* Para destacar el texto */
+}
+
+/* Efecto hover en el contenedor del encabezado */
+.header-container :hover {
+  color: #f0f0f0;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column; /* Apilar elementos en pantallas pequeñas */
+      align-items: flex-start; /* Alinear elementos al inicio */
+  }
+
+  nav ul {
+      flex-direction: column; /* Apilar elementos del menú */
+      width: 100%; /* Hacer que el menú ocupe el ancho completo */
+  }
+
+  nav ul li {
+      width: 100%; /* Cada elemento del menú ocupa el ancho completo */
+  }
+
+  .button-container {
+      margin: 20px; /* Reducir margen en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 20px; /* Reducir tamaño de fuente en pantallas muy pequeñas */
+  }
+
+  nav ul li a {
+      padding: 10px; /* Reducir padding para enlaces en pantallas pequeñas */
+  }
+}
+
+/*FIN DE ENCABEZADO*/
+
+/*Inicio de Contenido Medio*/
+
+/* lista visible */
+.contenedor-acordeon {
+  width: auto; /* Ajusta esto si necesitas un ancho específico */
+  max-width: 1200px; /* Mantén el ancho máximo */
+  margin: 30px auto; /* Centra horizontalmente */
+  font-family: 'Raleway', sans-serif;
+}
+
+.contenedor-acordeon h2 {
+  text-align: left; /* Alinear el título a la izquierda */
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.acordeon {
+  background: #f0f0f0; /* Fondo menos blanco */
+  padding: 2px; /* Elimina el padding */
+}
+
+.acordeon label {
+  display: flex; /* Usar flex para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 15px; /* Espaciado interno */
+  font-size: 1.2em; /* Tamaño de fuente relativo para mejor adaptabilidad */
+  background: #ffab40; /* Fondo naranja más vibrante */
+  color: #2c2c2c; /* Texto oscuro */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  margin-bottom: 2px; /* Espacio entre el label y el contenido */
+  transition: all 300ms ease; /* Transición suave */
+  border: 1px solid #ff9100; /* Borde un poco más oscuro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+.acordeon label:hover {
+  background: #ff9f00; /* Un tono más oscuro al hacer hover */
+  color: #ffffff; /* Cambia el color del texto al blanco */
+  border-color: #ff9100; /* Borde del mismo tono que el hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: scale(1.03); /* Aumento ligero de tamaño */
+  opacity: 0.95; /* Ligera opacidad al hacer hover */
+}
+
+.acordeon input:checked + label {
+  background: #ff6f20; /* Color al mostrar contenido */
+  border-color: #ff5722; /* Borde más oscuro al mostrar contenido */
+}
+
+.acordeon label::after {
+  content: '▶'; /* Icono de flecha */
+  margin-left: auto; /* Empuja el ícono a la derecha */
+  transition: transform 300ms ease; /* Transición suave para el ícono */
+}
+
+.acordeon input:checked + label::after {
+  transform: rotate(90deg); /* Rotar la flecha al abrir */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .acordeon label {
+    font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .acordeon label {
+    font-size: 0.9em; /* Tamaño de fuente aún más pequeño en dispositivos móviles */
+    padding: 8px; /* Reduce más el padding */
+  }
+}
+
+
+
+.acordeon .contenido-acordeon {
+  padding: 0; /* Elimina el padding */
+  margin: 0 20px; /* Mantiene el margen lateral */
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 700px;
+  padding: 15px 0; /* Espaciado en la parte superior e inferior */
+}
+
+.btn-acordeon {
+  display: none;
+}
+
+.contenido-acordeon ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+.contenido-acordeon li {
+  position: relative; /* Necesario para el pseudoelemento */
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  line-height: 1.6; /* Mejora la legibilidad */
+  border-bottom: 2px solid rgb(209, 118, 118); /* Línea roja debajo del texto */
+  padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+
+.contenido-acordeon li:last-child {
+  border-bottom: none; /* Elimina la línea del último elemento */
+}
+
+/* CONTENIDO ACORDEON - ICONOS */
+
+.contenido-acordeon-iconos {
+  padding: 0; /* Elimina el padding */
+  margin: 0 20px; /* Mantiene el margen lateral */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon-iconos {
+  max-height: 700px;
+  padding: 15px 0; /* Espaciado en la parte superior e inferior */
+}
+
+.contenido-acordeon-iconos ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+  display: flex; /* Usar flexbox para alinear iconos */
+  justify-content: center; /* Centra los iconos horizontalmente */
+  gap: 20px; /* Espacio entre iconos */
+  flex-wrap: wrap; /* Permite que los iconos se ajusten a varias líneas si es necesario */
+}
+.contenido-acordeon-iconos li {
+  position: relative; /* Necesario para el pseudoelemento */
+  margin-bottom: 15px; /* Espaciado entre elementos */
+  transition: transform 0.3s; /* Añadir transición para el efecto hover */
+}
+
+.contenido-acordeon-iconos li:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.contenido-acordeon-iconos a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333;
+}
+
+/* Estilos de hover para cada enlace */
+.contenido-acordeon-iconos a.facebook:hover {
+  background-color: #3b5998; /* Color de fondo para Facebook */
+  color: #fff; /* Cambia el color del texto si es necesario */
+}
+
+.contenido-acordeon-iconos a.instagram:hover {
+  background-color: #E4405F; /* Color de fondo para Instagram */
+  color: #fff;
+}
+
+.contenido-acordeon-iconos a.youtube:hover {
+  background-color: #FF0000; /* Color de fondo para YouTube */
+  color: #fff;
+}
+
+.contenido-acordeon-iconos a.whatsapp:hover {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.contenido-acordeon-iconos a.tiktok:hover {
+  background-color: #000000; /* Color de fondo para TikTok */
+  color: #fff;
+}
+
+.contenido-acordeon-iconos a.linkedin:hover {
+  background-color: #0077B5; /* Color de fondo para LinkedIn */
+  color: #fff;
+}
+
+
+.contenido-acordeon-iconos a::after {
+  content: attr(title); /* Mostrar el atributo title como tooltip */
+  position: absolute;
+  top: 125%; /* Colocar debajo del icono */
+  left: 50%; /* Centrar el tooltip */
+  transform: translateX(-50%); /* Centrar el tooltip */
+  background: #333; /* Fondo del tooltip */
+  color: #fff; /* Color del texto del tooltip */
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Evitar que el texto se envuelva */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s; /* Transición suave */
+  pointer-events: none; /* Ignorar eventos del ratón */
+}
+
+.contenido-acordeon-iconos a:hover::after {
+  opacity: 1; /* Mostrar el tooltip al pasar el ratón */
+}
+
+
+
+/*******/
+
+/* Estilos del footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+  
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    padding: 0;
+    padding-top: 20px; /* Ajusta este valor para mover todo el bloque de párrafos hacia abajo */
+  }
+  
+  .contact-info p {
+    margin: 3px 0; /* Reduce aún más el margen entre párrafos */
+    font-size: 15px; /* Ajusta el tamaño de fuente si es necesario */
+    line-height: 1.2; /* Ajusta el espaciado de línea entre los textos */
+    margin-top: 10px; /* Ajusta este valor para mover el bloque más abajo */
+    padding-top: 1px; /* Ajusta este valor para mover todo el bloque de párrafos hacia abajo */
+  }
+
+  .contact-info :hover{
+    text-decoration: none;
+  }
+  
+  .contact-title {
+    color: #000;
+    background-color: #a5f04d;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(165, 240, 77, 0.5);
+    display: inline-block;
+    font-size: 25px;
+  }
+  
+/* Links del footer (horizontal) */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .footer-links a:hover {
+    color: #a5f04d;
+    text-decoration: none;
+  }
+  
+/* Contenedor del formulario y links */
+.subscribe-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -800px; /* Mueve el contenedor hacia la izquierda */
+  }
+
+  .subscribe{
+    padding: 40px;
+  }
+  
+  /* Redes sociales usando FontAwesome */
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #a5f04d;
+  }
+  
+  /* Estilo del formulario de suscripción */
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .subscribe button {
+    background-color: #a5f04d;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+.divider2 {
+    width: 85%;
+    border-top: 2px solid rgba(238, 236, 235, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+  }
+  
+  /* Pie de página */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Degradado del pulgar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #4c1a9e, #2b65e6); /* Cambio de color al pasar el cursor */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(45deg, #350e66, #1a45b4); /* Efecto al hacer clic */
+}
+
+
+/* Estilo para el contenido con desplazamiento */
+#scrollable-content {
+  padding: 10px;
+  /* Elimina la altura fija */
+}

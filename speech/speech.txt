@@ -1,0 +1,307 @@
+1. SPEECH DE SALUDO Y DESPEDIDA:
+
+SALUDO:
+
+“Te saluda (primer nombre y primer apellido de ASESOR) con quién tengo el gusto?” 
+
+
+SPEECH DE DESPEDIDA:(Martes, Miércoles, Jueves y Domingos)
+
+"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Que tenga un excelente día".
+
+
+***********************************************************************************************************************************************************************************
+
+
+SPEECH DE DESPEDIDA - INICIO DE SEMANA: (Todos los Lunes):
+
+"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Le deseamos un buen inicio de semana". (LUNES)
+
+
+SPEECH DE DESPEDIDA - FINES DE SEMANA: Viernes y Sábado:
+
+"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Le deseamos un buen fin de semana". (VIERNES Y SABADO)
+
+
+SPEECH DE DESPEDIDA - CUANDO NO PODAMOS TRANSFERIR A ENCUESTA:
+
+"(Nombre del cliente), gracias por comunicarse con nosotros, recuerde que estamos para servirte, que tengas un buen día. Puede finalizar la llamada".
+
+
+
+SPEECH DE MALESTAR: Se aplicará el speech cuando se detecte algún malestar por parte del cliente y el inconveniente sea ocasionado por Bitel. Ejemplo: Incidencia y/o escalamientos fuera de plazo.
+
+
+"(Nombre del cliente), te pedimos las disculpas por lo ocurrido, seguiremos trabajando para brindarte el servicio que te mereces. Gracias por comunicarte con nosotros, en breve recibirás vía mensaje de texto una encuesta para que puedas calificar mi atención + Speech de despedida según sea el caso".
+
+2. SPEECH DÍAS FESTIVOS:
+
+Aquí veremos todos los Speech a mencionar en base a la festividad que se celebre.
+
+01 de Enero: Año Nuevo => “Le deseamos que este año sea lleno de bendiciones y éxitos para usted. ¡Feliz Año 202X!”
+
+01 de Mayo: Día del Trabajo => “Que tenga un feliz Día del Trabajo".
+
+28 y 29 de Julio: Fiestas patrias => “Que tenga unas felices fiestas patrias".
+
+31 de octubre: Día de la canción criolla => “Que celebre de un hermoso día de la Canción Criolla".
+
+24 de diciembre: Noche Buena => “Le deseamos una Noche Buena y que sea llena de felicidad".
+
+25 de Diciembre: Navidad => “Deseamos que su navidad este llena de paz y alegría. ¡Feliz Navidad!”
+
+26 al 31 de Diciembre: Prospero año nuevo => “Le deseamos un Próspero Año Nuevo a usted y su familia".
+
+Partidos de Perú (fechas que juega Perú) => “Que tenga un buen día y por supuesto ¡Arriba Perú!".
+
+3. SPEECH "MI BITEL":
+
+“También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app  “MI BITEL”
+
+4. CLIENTE USA TÉRMINOS INADECUADOS (cliente grosero):
+
+Al detectar que el cliente utiliza términos inadecuados, ES GROSERO o NOS INSULTA, se procederá con el siguiente speech:
+
+“(Nombre del cliente), entiendo su malestar, pero por favor te solicito que no use palabras ofensivas que esto ocasiona la perdida de respeto en esta comunicación."
+
+SI EL CLIENTE CONTINUA:
+
+“(Nombre del cliente), si continua me veré en la obligación de realizar el corte de la llamada".
+
+SI EL CLIENTE PERSISTE se procederá con el siguiente speech y luego se aplica el speech de despedida para finalizar la llamada:
+
+"(Nombre del cliente), por lo antes ya informado le agradecemos por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención".
+
+5. LLAMADA MOLESTOSA:
+
+Si al inicio de la llamada y pese a nuestra presentación el cliente NO realiza consultas relacionadas al servicio que brindamos se aplicara el siguiente speech:
+
+“Cliente no realiza consulta, se procede a finalizar la llamada”.
+
+TENER EN CUENTA QUE LA LLAMADA SERA TRANSFERIDA A ENCUESTA
+
+TIPIFICACIÓN:
+
+INFORMACIÓN / INFORMACIÓN / LLAMADA VICIO / INFORMACIÓN LLAMADA VICIO / LLAMADA MOLESTOSA
+
+
+6. PÉRDIDA DE INTERACCIÓN CON EL CLIENTE O LLAMADA MUDA:
+
+Si el cliente deja de contestar en la llamada se utilizará el siguiente speech (hasta 3 veces, retomando cada 2 segundos):
+
+"(Nombre del cliente), ¿Te encuentras en línea?".
+
+"(Nombre del cliente), ¿Te encuentras en línea?".
+
+"(Nombre del cliente), ¿Te encuentras en línea?".
+
+Si el cliente no responde se aplicará el siguiente speech:
+
+"(Nombre del cliente), te informamos que existe problemas con la comunicación, te sugerimos que te vuelvas a comunicar".
+
+TRANSFERIR A ENCUESTA
+
+TIPIFICACIÓN:
+
+INFORMACIÓN / INFORMACIÓN / LLAMADA VICIO / INFORMACIÓN LLAMADA VICIO / LLAMADA MUDA
+
+Si estabas en consulta con el cliente y se pierde la interacción, 
+debes de tipificar según la consulta colocando la opción no se cumple ciclo de llamada.
+
+7. AGENDAMIENTO A SUPERVISOR:
+
+AGENDAMIENTO:
+
+“Estimado Cliente, le informamos que el personal de Call center se encuentra atendiendo todas sus consultas por lo que en este momento no es posible efectuar la transferencia a un supervisor de servicio, en ese sentido le pedimos nos brinde un teléfono de contacto para que un supervisor pueda efectuar la comunicación con usted dentro de las 24 horas siguientes al término de la presente comunicación.”
+
+PLANTILLA PARA AGENDAMIENTO:
+
+Numero en consulta:
+Número de referencia:
+Motivo de llamada:
+Nombre del cliente:
+
+TIPIFICACIÓN:
+
+INFORMACIÓN / INFORMACIÓN / TRANSFERENCIAS / OTROS / DEVOLUCIÓN DE LLAMADA POR COORDINADOR 123
+
+8. TRANSFERENCIA A SUPERVISOR:
+
+TRANSFERENCIA:
+
+Si el cliente solicita la transferencia a un supervisor, pese a que el asesor intentó manejar la llamada tratando de detectar la necesidad del cliente, se hará la transferencia (consultar primero si hay disponibilidad), aplicando el siguiente speech: 
+
+"(Nombre del cliente), procederé a transferir la llamada al supervisor en turno, le pedimos se mantenga en línea para su atención, que tenga un buen día".
+
+PLANTILLA PARA TRANFERIR A SUPERVISOR:
+
+Numero en consulta:
+Motivo de llamada:
+Nombre y apellido del cliente:
+Nombre del supervisor a transferir:
+
+TIPIFICACIÓN:
+INFORMACIÓN / INFORMACIÓN / TRANSFERENCIAS / OTROS / LLAMADA ATENDIDA POR COORDINADOR 123
+
+9. DEMORA EN LA RESPUESTA DE INCIDENCIA:
+
+"(Nombre del cliente) lamentamos lo ocurrido, acabo de reportar su caso con mi supervisor a cargo, se comunicarán con usted para brindarle una respuesta". Por favor manténgase al pendiente de la comunicación, nuevamente le solicitamos disculpas por la demora".
+
+10. CAÍDA DE SERVICIO (masivo señal, datos o voz):
+
+           PREVIA AUTORIZACIÓN DEL SUPERVISOR DE OPERACIONES
+
+"(Nombre del cliente) lamentamos lo que nos informa, estamos trabajando para resolver el inconveniente lo más pronto posible. Por favor reinicie su equipo y pruebe nuevamente en el transcurso del día”.
+
+11. CAÍDA DE UNA O VARIAS APPS A NIVEL MUNDIAL:
+
+SPEECH POR UN SOLO APLICATIVO CAÍDO A NIVEL MUNDIAL:
+
+"(Nombre del cliente), el problema que presenta el (WhatsApp, Facebook o YouTube) es a nivel mundial, reintente el ingreso a dicha aplicación dentro de unas horas".
+
+SPEECH CUANDO EL CLIENTE REPORTA PROBLEMAS CON VARIAS REDES SOCIALES O APPS:
+
+"(Nombre del cliente), el problema que nos mencionas con sus redes sociales es a nivel mundial, reintente el ingreso a dichas aplicaciones dentro de unas horas".
+
+12. AFECTACIÓN DE APLICATIVOS:
+
+PREVIA AUTORIZACIÓN DEL SUPERVISOR DE OPERACIONES
+
+1 - Brindar speech de saludo. 
+2 - Personalizar y solicitar número en consulta.
+3 - Solicitar consulta:
+
+      3.1 - EN INFORMACIÓN COMERCIAL - NO APLICAR SPEECH, (brinda la información y seguir la estructura de llamada).
+      3.2 - EN INFORMACIÓN DE LA LÍNEA - SÍ, APLICAR EL SPEECH DE AFECTACIÓN:
+
+“(Nombre del cliente), en estos momentos no podemos visualizar la información en el sistema, le invitamos a que se comunique en el transcurso del día. Muchas gracias”. 
+
+4 - Realiza la pregunta de conformidad y TRANSFIERE A ENCUESTA!!!
+
+Tener en cuenta que se debe ENTREGAR EL NÚMERO AL SUPERVISOR, (incluido) RECLAMOS, BLOQUEO POR ROBO y/o PÉRDIDA se debe agendar el número y entregarlo al supervisor a cargo para coordinar la devolución de llamada apenas regrese el sistema".
+
+13. ACTUALIZACIÓN DE DATOS EN EL SISTEMA:
+
+“(Nombre del cliente), la información requerida se puede visualizar en nuestro sistema en el transcurso de dos horas, le sugerimos desactivar sus datos móviles y comunicarse en el plazo mencionado, muchas gracias”.
+
+14. SPEECH DE CIERRE DE SOLICITUD DE RECLAMOS:
+
+Si el cliente al comenzar la llamada solicita un reclamo, pero, en el transcurso desiste de la solicitud, para que quede claro en la llamada que el cliente ya no desea continuar con el proceso de reclamo, tenemos que indicar el siguiente speech obligatoriamente:
+
+SPEECH:
+
+“Estimado cliente, ¿aún a pesar de haber respondido su consulta desea realizar un reclamo de acuerdo a la normativa emitida por OSIPTEL?”.
+
+15. SPEECH DE WHATSAPP (APLICA SOLO EN ESCENARIOS DE FACTURACIÓN):
+
+“NO OLVIDEMOS MENCIONAR NUESTRO SPEECH DE WHATSAPP"
+
+"(Nombre del cliente), si tiene más dudas sobre su facturación le invitamos a realizarlo por nuestro canal de WhatsApp, le enviaré un SMS con el link de acceso directo para una atención personalizada y rápida".
+
+UNA VEZ MENCIONADO EL SPEECH, DEBEMOS TAMBIÉN ENVIAR EL SIGUIENTE SMS:
+
+"(Nombre del cliente), puedes seguir consultando sobre tu facturación a través de nuestro canal de WhatsApp Bitel, ingresando al siguiente enlace: http://bit.ly/3rIo3dG. Dale en enviar y uno de nuestros asesores te responderá a la brevedad".
+
+RECUERDEN QUE AL TÉRMINO DE ELLO SERÁ NECESARIO APLICAR EL SPEECH "MI BITEL"
+
+“También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL”.
+
+16. BLOQUEO POR FALTA DE PAGO:
+
+VIGENTES:
+
+CICLO 06:
+
+"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 06/xx/xxxx al 05/xx/xxxx, recuerde que sus facturas vencen todos los 05 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".
+
+CICLO 16:
+
+"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 16/xx/xxxx al 15/xx/xxxx, recuerde que sus facturas vencen todos los 15 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".
+
+CICLO 26:
+
+"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 26/xx/xxxx al 25/xx/xxxx, recuerde que sus facturas vencen todos los 25 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".
+
+NO VIGENTES:
+
+CICLO 15 - NO VIGENTE:
+
+"(Nombre del cliente), la línea se encuentra Bloqueada por Falta de Pago, tiene un importe pendiente de S/ xx.xx correspondiente al periodo de facturación del 01/xx/2024 al xx/xx/2024, recuerde que sus recibos vencen el último día de cada mes. Para reactivar su línea realice el pago de dicho monto y la línea se reactivará en un plazo no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".
+
+CICLO 1 - NO VIGENTE:
+
+"(Nombre del cliente), la línea se encuentra Bloqueada por Falta de Pago, tiene un importe pendiente de S/ xx.xx, recuerde que sus recibos vencen los días 20 de cada mes. Para reactivar su línea realice el pago de dicho monto y la línea se reactivará en un plazo no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".
+
+17. BLOQUEO POR FALTA DE RECARGA:
+
+Si el cliente no realizó ninguna recarga desde que activó la línea o pasaron 90 días desde su ultima recarga y no cuenta con saldo:
+
+"(Nombre del cliente), le informamos que su línea se encuentra bloqueada ya que no se realizaron recargas por más de 90 días; le recomendamos realizar una recarga mínima de S/3.00 para que se reactive el servicio en un plazo no mayor a 1 hora. Caso contrario su servicio será cancelado. También puede visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app “MI BITEL”.
+
+Cuando la ultima recarga ha sido realizada hace 210 días y la línea cuenta con saldo en Basic Balance:
+
+"(Nombre del cliente), le informamos que su línea se encuentra bloqueada ya que no se realizaron recargas en 210 días; le recomendamos realizar una recarga mínima de S/3.00 para que se reactive el servicio en un plazo no mayor a 1 hora y le permita usar su saldo acumulado, caso contrario, su servicio será cancelado. También puede visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app “MI BITEL”.
+
+18. BLOQUEO POR CENTRO PENITENCIARIO:
+
+SPEECH POR BLOQUEO DE LÍNEA POR USO EN UN ESTABLECIMIENTO PENITENCIARIO:
+
+"Estimado cliente, podemos verificar que la línea se encuentra suspendida por uso indebido, el titular del servicio debe acercarse a nuestros centros de atención al cliente con su documento de identidad original, para firmar la solicitud del desbloqueo de equipo y reactivación del servicio por uso prohibido ¿Conoce algún centro de atención cercano a usted?"
+
+19. SPEECH CUANDO ALGÚN CANAL DE BITEL SE HAN TRATADO DE COMUNICAR CON EL CLIENTE:
+
+“(Nombre del cliente), informarle que la llamada al parecer fue de alguna de nuestras áreas, de ser necesario se estarán contactando nuevamente con usted para que le den mayor detalle”.
+
+20. MENSAJE FRAUDE:
+
+“(Nombre del cliente), le informamos que el mensaje recibido por tu línea no ha sido enviado por nuestra empresa ni por ninguna otra vinculada a la nuestra; por tal motivo, le sugerimos hacer caso omiso a ello, dado que la información podría traerle consecuencias negativas”.
+
+TIPIFICACIÓN:
+
+INFORMACIÓN / INFORMACIÓN / ATIPICA / CONSULTAS ATIPICAS / MENSAJES Y LLAMADA FRAUDE
+
+21. DEVOLUCIÓN DE LLAMADA:
+
+En información comercial, si la llamada supera los 04:00 minutos y la misma se va a extender, aplicar el speech de devolución de llamada previa autorización del supervisor:
+
+"(Nombre del cliente), de acuerdo a su consulta permítame devolverle la llamada en este momento para continuar con lo que solicita. Por favor, le devolveremos la llamada al mismo número que del cual se comunica. Le invito a cortar la comunicación”.
+
+TIPIFICACIÓN
+
+INFORMACIÓN / INFORMACIÓN / ATÍPICA / DEVOLUCIÓN DE LLAMADA / DEVOLUCIÓN DE LLAMADA CONTACTO EFECTIVO
+
+ESTA DEVOLUCIÓN NO APLICA PARA:
+
+Suspensión total de la línea y bloqueo de equipo. 
+Suspensión temporal.
+Cambio de numero.
+Reclamo.
+Migración / Cancelaciones.
+
+CONSIDERACIONES:
+
+La devolución de llamada se aplica con el fin de disminuir el TMO, en caso el cliente NO acepte, se seguirá con el flujo regular de la llamada
+
+También es aplicado en el corte de llamada en donde se estuvieron realizando transacciones operativas (Procesos).
+
+En el corte de llamadas en donde se estuvieron haciendo transacciones operativas como bloqueos, cambio de número, desistimiento de migración u otro similar, debe de realizarse inmediatamente la devolución de la llamada y continuar con la gestión o consultas que habían quedado pendiente en la comunicación; a ello, se tendrá que agregar en las notas de la tipificación, que se procedió con dos gestiones (llamadas) por un corte de llamada (debemos precisar esto de manera puntual).
+
+En el caso de rellamadas en donde el mismo cliente vuelva a ser atendido por el mismo asesor, el agente, debe iniciar la llamada como si fuera una nueva comunicación, siguiendo la estructura normada, incluyendo el escenario que el cliente pueda plantear, así fuese que mencione que ya ha sido atendido por el mismo agente en llamada anterior. Ante esta casuística, se puede usar el siguiente speech:
+
+“Estimado cliente, posiblemente si lo he atendido anteriormente, pero por ser una nueva llamada necesito que me facilite algunos detalles para poder continuar con la comunicación”.
+
+ESTRUCTURA DEVOLUCIÓN CONTACTO EFECTIVO:
+
+Número del que llama // Se genera devolución porque consulta sobre xxxxxxx // Contacto efectivo // Id de devolución.
+
+ESTRUCTURA DEVOLUCIÓN CONTACTO NO EFECTIVO:
+
+Número del que llama // Se genera devolución porque consulta sobre xxxxxxx // Contacto no efectivo, Id 1, Id2, // Id último intento.
+
+22. LLAMADAS MAL INTENCIONADAS:
+
+"Estimado cliente, en aplicación al Decreto de Urgencia N° 026-2020 y a solicitud del MTC – Ministerio de Transportes y Comunicaciones, su línea ha sido suspendida por un periodo de 30 días calendario por haber realizado llamadas malintencionadas según un reporte de entidades a cargo de las Centrales de Emergencia, Urgencias e Información. Finalmente le comunicamos que su línea será reactivada al culminar el plazo antes mencionado".
+
+23. SPEECH DE NO VALIDACION DE DATOS:
+
+“(Nombre del cliente)  me encantaría ayudarlo, pero los datos que me ha proporcionado no son los correctos, motivo por el cual no se puede proceder con la atención, lo invitamos a comunicarse nuevamente con los datos correctos y/o visitar uno de nuestros Centros de Atención más cercanos”.

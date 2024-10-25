@@ -1,0 +1,52 @@
+/* diseño.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo suave */
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Un azul oscuro para el título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para bordes redondeados */
+}
+
+th {
+    background-color: #ff7f50; /* Color naranja bonito para la celda combinada */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+    padding: 12px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+td:hover {
+    background-color: #ffe4b5; /* Color suave al pasar el mouse */
+    transform: scale(1.011); /* Aumentar el tamaño de la celda */
+    border-radius: 7.5px;
+}
+
+/****/
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto normal */
+}
+
+
+

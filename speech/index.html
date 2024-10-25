@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon"> <!-- Cambia la ruta según la ubicación de tu imagen -->
+    <title>SPEECH</title>
+</head>
+<body>
+        <!-- Botón interactivo para regresar al principal.html -->
+        <button class="return-button" onclick="history.back()">Regresar</button>
+
+        <!-- El resto de tu contenido -->
+    
+    <div class="container">
+        <h1>SPEECHS OFICIALES</h1>
+        <div id="button-container">
+            
+            <div class="speech-item">
+                <button onclick="showSpeech('greeting')">1. Speech de saludo y despedida</button>
+                <div id="greeting" class="speech-content">
+                    <h2>Speech de saludo y despedida</h2>
+                    <strong>Saludo:</strong>
+                    <p>"Te saluda (primer nombre y primer apellido de ASESOR) ¿con quién tengo el gusto?"</p>
+                    <strong>Despedida:</strong> <br>
+                    <p>"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Que tenga un excelente día."</p>
+                    <strong>SPEECH DE DESPEDIDA:(Martes, Miércoles, Jueves y Domingos)</strong> <br>
+                    <p>"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Que tenga un excelente día".</p>
+                    <strong>SPEECH DE DESPEDIDA - INICIO DE SEMANA: (Todos los Lunes):</strong> <br>
+                    <p>"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Le deseamos un buen inicio de semana". (LUNES)</p>
+                    <strong>SPEECH DE DESPEDIDA - FINES DE SEMANA: Viernes y Sábado:</strong> <br>
+                    <p>"(Nombre del cliente), gracias por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención. Le deseamos un buen fin de semana". (VIERNES Y SABADO)</p>
+                    <strong>SPEECH DE DESPEDIDA - CUANDO NO PODAMOS TRANSFERIR A ENCUESTA:</strong> <br>
+                    <p>"(Nombre del cliente), gracias por comunicarse con nosotros, recuerde que estamos para servirte, que tengas un buen día. Puede finalizar la llamada".</p>
+                    <strong>SPEECH DE MALESTAR:</strong> <br>
+                    <p>Se aplicará el speech cuando se detecte algún malestar por parte del cliente y el inconveniente sea ocasionado por Bitel. Ejemplo: Incidencia y/o escalamientos fuera de plazo.</p>
+                    <p>"(Nombre del cliente), te pedimos las disculpas por lo ocurrido, seguiremos trabajando para brindarte el servicio que te mereces. Gracias por comunicarte con nosotros, en breve recibirás vía mensaje de texto una encuesta para que puedas calificar mi atención + Speech de despedida según sea el caso".</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('holidays')">2. Speech días festivos</button>
+                <div id="holidays" class="speech-content">
+                    <h2>Speech días festivos</h2>
+                    <strong>01 de Enero: Año Nuevo =></strong> <p>"Le deseamos que este año sea lleno de bendiciones y éxitos para usted. ¡Feliz Año 202X!"</p>
+                    <strong>01 de Mayo: Día del Trabajo =></strong> <p>"Que tenga un feliz Día del Trabajo".</p> <br>
+                    <strong>28 y 29 de Julio: Fiestas patrias => </strong> <p>"Que tenga unas felices fiestas patrias".</p> <br>
+                    <strong>31 de octubre: Día de la canción criolla => </strong> <p> "Que celebre un hermoso día de la Canción Criolla".</p> <br>
+                    <strong>24 de diciembre: Noche Buena => </strong> <p>"Le deseamos una Noche Buena y que sea llena de felicidad".</p> <br>
+                    <strong>25 de Diciembre: Navidad => </strong> <p>"Deseamos que su navidad esté llena de paz y alegría. ¡Feliz Navidad!"</p> <br>
+                    <strong>26 al 31 de Diciembre: Próspero año nuevo =></strong> <p> "Le deseamos un Próspero Año Nuevo a usted y su familia".</p> <br>
+                    <strong>Partidos de Perú =></strong> <p>"Que tenga un buen día y por supuesto ¡Arriba Perú!".</p> <br>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('myBitel')">3. Speech Mi Bitel</button>
+                <div id="myBitel" class="speech-content">
+                    <h2>Speech "Mi Bitel"</h2>
+                    <p>“También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app  “MI BITEL”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('rudeCustomer')">4. Cliente usa términos inadecuados</button>
+                <div id="rudeCustomer" class="speech-content">
+                    <h2>Cliente usa términos inadecuados</h2>
+                    <p>“(Nombre del cliente), entiendo su malestar, pero por favor le solicito que no use palabras ofensivas ya que esto ocasiona la pérdida de respeto en esta comunicación." </p>
+                    <strong>SI EL CLIENTE CONTINUA:</strong>“(Nombre del cliente), si continúa me veré en la obligación de realizar el corte de la llamada". <br> <br>
+                   <strong>SI EL CLIENTE PERSISTE:</strong> "(Nombre del cliente), por lo antes ya informado le agradecemos por comunicarse con nosotros, en breve recibirá vía mensaje de texto una encuesta para que pueda calificar mi atención".
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('annoyingCall')">5. Llamada molesta</button>
+                <div id="annoyingCall" class="speech-content">
+                    <h2>Llamada molesta</h2>
+                    <p>“Cliente no realiza consulta, se procede a finalizar la llamada”.</p> <br>
+                    <strong>TIPIFICACIÓN:</strong> <br> <br>
+                    <img src="img/molestosa.jpeg" alt="Descripción de la imagen" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('interactionfail')">6. Pérdida de interacción con el cliente o llamada muda</button>
+                <div id="interactionfail" class="speech-content">
+                    <h2>Pérdida de interacción con el cliente o llamada muda</h2>
+                    <p>Si el cliente deja de contestar en la llamada se utilizará el siguiente speech (hasta 3 veces, retomando cada 2 segundos):</p> <br>
+                    <p>"(Nombre del cliente), ¿Te encuentras en línea?".</p> <br>
+                    <p>"(Nombre del cliente), ¿Te encuentras en línea?".</p> <br>
+                    <p>"(Nombre del cliente), ¿Te encuentras en línea?".</p> <br>
+                    <strong>Si el cliente no responde se aplicará el siguiente speech:</strong> <br> <br>
+                    <p>"(Nombre del cliente), te informamos que existe problemas con la comunicación, te sugerimos que te vuelvas a comunicar".</p> <br>
+                    <strong>TIPIFICACIÓN:</strong> <br><br>
+                    <img src="img/muda.jpeg" alt="Descripción de la imagen" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('agendsuper')">7. Agendamiento a Supervisor</button>
+                <div id="agendsuper" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>“Estimado Cliente, le informamos que el personal de Call center se encuentra atendiendo todas sus consultas por lo que en este momento no es posible efectuar la transferencia a un supervisor de servicio, en ese sentido le pedimos nos brinde un teléfono de contacto para que un supervisor pueda efectuar la comunicación con usted dentro de las 24 horas siguientes al término de la presente comunicación.”</p> <br>
+                    <strong>PLANTILLA PARA AGENDAMIENTO:</strong> <br> <br>
+                    <div class="info-container">
+                        <pre class="info-row" id="text-info">
+                            Número en consulta:      
+                            Número de referencia:      
+                            Motivo de llamada:      
+                            Nombre del cliente:
+                            $$__&&
+                        </pre>
+                        <button class="copy-btn" onclick="copyText('text-info', 'copy-message')">Copiar</button>
+                        <span id="copy-message" class="copy-message">Plantilla Copiada</span> 
+                    </div>
+                    <br><strong>TIPIFICACIÓN:</strong> <br> <br>                  
+                    <img src="img/speech1.jpeg" alt="Descripción de la imagen" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('transfersuper')">8. transferencia a Supervisor</button>
+                <div id="transfersuper" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>"(Nombre del cliente), procederé a transferir la llamada al supervisor en turno, le pedimos se mantenga en línea para su atención, que tenga un buen día".</p> <br>
+                    <strong>PLANTILLA PARA TRANSFERENCIA:</strong> <br> <br>
+                    <div class="info-container">
+                        <pre class="info-row" id="text-info-transfer">
+                            Numero en consulta:
+                            Motivo de llamada:
+                            Nombre y apellido del cliente:
+                            Nombre del supervisor a transferir:
+                            $$__&&
+                        </pre> 
+                        <button class="copy-btn" onclick="copyText('text-info-transfer', 'copy-message-transfer')">Copiar</button>
+                        <span id="copy-message-transfer" class="copy-message">Plantilla Copiada</span>                   
+                    </div>
+                    <br><strong>TIPIFICACIÓN:</strong> <br> <br>                  
+                    <img src="img/atendida.jpeg" alt="Descripción de la imagen" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('demoraagen')">9. Demora en la respuesta de la Incidencia</button>
+                <div id="demoraagen" class="speech-content">
+                    <h2>speech</h2>
+                    <p>"(Nombre del cliente) lamentamos lo ocurrido, acabo de reportar su caso con mi supervisor a cargo, se comunicarán con usted para brindarle una respuesta". Por favor manténgase al pendiente de la comunicación, nuevamente le solicitamos disculpas por la demora".</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('caidaserver')">10. Caída de Servicio  (masivo señal, datos o voz)</button>
+                <div id="caidaserver" class="speech-content">
+                    <h2>speech</h2>
+                    <strong>PREVIA AUTORIZACIÓN DEL SUPERVISOR DE OPERACIONES</strong> <br> <br>
+                    <p>"(Nombre del cliente) lamentamos lo que nos informa, estamos trabajando para resolver el inconveniente lo más pronto posible. Por favor reinicie su equipo y pruebe nuevamente en el transcurso del día”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('caidaapp')">11. Caída de una o varias apps a Nivel Mundial</button>
+                <div id="caidaapp" class="speech-content">
+                    <h2>speech</h2>
+                    <p>"(Nombre del cliente), el problema que presenta el (WhatsApp, Facebook o YouTube) es a nivel mundial, reintente el ingreso a dicha aplicación dentro de unas horas".</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('afectacion')">12. Afectación de Aplicativos</button>
+                <div id="afectacion" class="speech-content">
+                    <h2>PREVIA AUTORIZACIÓN DEL SUPERVISOR DE OPERACIONES</h2>
+                    <p>1 - Brindar speech de saludo.</p>
+                    <p>2 - Personalizar y solicitar número en consulta.</p>
+                    <p>3 - Solicitar consulta:</p> <br>
+                    <strong>3.1 - EN INFORMACIÓN COMERCIAL - NO APLICAR SPEECH,</strong> <p>(brinda la información y seguir la estructura de llamada).</p> <br>
+                    <strong>3.2 - EN INFORMACIÓN DE LA LÍNEA - SÍ, APLICAR EL SPEECH DE AFECTACIÓN:</strong> <p>“(Nombre del cliente), en estos momentos no podemos visualizar la información en el sistema, le invitamos a que se comunique en el transcurso del día. Muchas gracias”.</p> <br>
+                    <p>4 - Realiza la pregunta de conformidad y TRANSFIERE A ENCUESTA!!!</p> <br>
+                    <strong>Tener en cuenta que se debe ENTREGAR EL NÚMERO AL SUPERVISOR, (incluido) RECLAMOS, BLOQUEO POR ROBO y/o PÉRDIDA se debe agendar el número y entregarlo al supervisor a cargo para coordinar la devolución de llamada apenas regrese el sistema".</strong>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('actualizacion')">13. Actualización de datos en el sistema</button>
+                <div id="actualizacion" class="speech-content">
+                    <h2>speech</h2>
+                    <p>“(Nombre del cliente), la información requerida se puede visualizar en nuestro sistema en el transcurso de dos horas, le sugerimos desactivar sus datos móviles y comunicarse en el plazo mencionado, muchas gracias”.</p>
+                </div>
+            </div>        
+            <div class="speech-item">
+                <button onclick="showSpeech('reclamos')">14. Speech de cierre de solicitud de reclamos</button>
+                <div id="reclamos" class="speech-content">
+                    <h2>Detalle</h2>
+                    <p>Si el cliente al comenzar la llamada solicita un reclamo, pero, en el transcurso desiste de la solicitud, para que quede claro en la llamada que el cliente ya no desea continuar con el proceso de reclamo, tenemos que indicar el siguiente speech obligatoriamente:</p> <br> 
+                    <strong>SPEECH:</strong> <br><br>
+                    <p>“Estimado cliente, ¿aún a pesar de haber respondido su consulta desea realizar un reclamo de acuerdo a la normativa emitida por OSIPTEL?”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('facturacion')">15. Speech de WhatsApp (Aplica solo en escenarios de Facturación)</button>
+                <div id="facturacion" class="speech-content">
+                    <h2>Detalles</h2>
+                    <strong>“NO OLVIDEMOS MENCIONAR NUESTRO SPEECH DE WHATSAPP"</strong> <br>
+                    <p>"(Nombre del cliente), si tiene más dudas sobre su facturación le invitamos a realizarlo por nuestro canal de WhatsApp, le enviaré un SMS con el link de acceso directo para una atención personalizada y rápida".</p> <br>
+                    <strong>UNA VEZ MENCIONADO EL SPEECH, DEBEMOS TAMBIÉN ENVIAR EL SIGUIENTE SMS:</strong> <br>
+                    <div class="info-container">
+                        <pre class="info-row" id="text-info-whatsapp">
+                            "(Nombre del cliente), puedes seguir consultando sobre tu facturación a través de nuestro canal de WhatsApp Bitel, ingresando al siguiente enlace: <a href="http://bit.ly/3rIo3dG">http://bit.ly/3rIo3dG.</a>Dale en enviar y uno de nuestros asesores te responderá a la brevedad".
+                        </pre>
+                        <button class="copy-btn" onclick="copyText('text-info-whatsapp', 'copy-message-whatsapp')">Copiar</button>
+                        <span id="copy-message-whatsapp" class="copy-message">Mensaje Copiado</span>                        
+                    </div> 
+                    <br><strong>RECUERDEN QUE AL TÉRMINO DE ELLO SERÁ NECESARIO APLICAR EL SPEECH "MI BITEL"</strong> <br> 
+                    <p>“También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('ciclos')">16. Bloqueo por falta de Pago</button>
+                <div id="ciclos" class="speech-content">
+                    <h2>VIGENTES:</h2><br>
+                    <strong>CICLO 06:</strong><br>
+                    <p>"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 06/xx/xxxx al 05/xx/xxxx, recuerde que sus facturas vencen todos los 05 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".</p> <br>
+                    <strong>CICLO 16:</strong><br>
+                    <p>"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 16/xx/xxxx al 15/xx/xxxx, recuerde que sus facturas vencen todos los 15 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".</p><br>
+                    <strong>CICLO 26:</strong><br>
+                    <p>"Estimado cliente, verificamos que su línea ha sido bloqueada por falta de pago, tiene un importe pendiente de pago de S/ xx.xx correspondiente al periodo de facturación del 26/xx/xxxx al 25/xx/xxxx, recuerde que sus facturas vencen todos los 25 de cada mes; una vez que realice el pago, el plazo de reconexión es no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".</p><br>
+                    <h2>NO VIGENTES:</h2><br>
+                    <strong>CICLO 15 - NO VIGENTE:</strong><br>
+                    <p>"(Nombre del cliente), la línea se encuentra Bloqueada por Falta de Pago, tiene un importe pendiente de S/ xx.xx correspondiente al periodo de facturación del 01/xx/2024 al xx/xx/2024, recuerde que sus recibos vencen el último día de cada mes. Para reactivar su línea realice el pago de dicho monto y la línea se reactivará en un plazo no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".</p><br>
+                    <strong>CICLO 1 - NO VIGENTE:</strong><br>
+                    <p>"(Nombre del cliente), la línea se encuentra Bloqueada por Falta de Pago, tiene un importe pendiente de S/ xx.xx, recuerde que sus recibos vencen los días 20 de cada mes. Para reactivar su línea realice el pago de dicho monto y la línea se reactivará en un plazo no mayor a 24 horas. También puedes visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app MI BITEL".</p><br>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('recarga')">17. Bloqueo por falta de Recarga</button>
+                <div id="recarga" class="speech-content">
+                    <h2>Detalles</h2>
+                    <strong>Si el cliente no realizó ninguna recarga desde que activó la línea o pasaron 90 días desde su ultima recarga y no cuenta con saldo:</strong><br>
+                    <p>"(Nombre del cliente), le informamos que su línea se encuentra bloqueada ya que no se realizaron recargas por más de 90 días; le recomendamos realizar una recarga mínima de S/3.00 para que se reactive el servicio en un plazo no mayor a 1 hora. Caso contrario su servicio será cancelado. También puede visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app “MI BITEL”.</p><br>
+                    <strong>Cuando la ultima recarga ha sido realizada hace 210 días y la línea cuenta con saldo en Basic Balance:</strong><br>
+                    <p>"(Nombre del cliente), le informamos que su línea se encuentra bloqueada ya que no se realizaron recargas en 210 días; le recomendamos realizar una recarga mínima de S/3.00 para que se reactive el servicio en un plazo no mayor a 1 hora y le permita usar su saldo acumulado, caso contrario, su servicio será cancelado. También puede visualizar esta información ingresando a la sección “MI BITEL” de nuestra página web o descargando nuestra app “MI BITEL”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('penitenciario')">18. Bloqueo por centro Penitenciario</button>
+                <div id="penitenciario" class="speech-content">
+                    <h2>SPEECH POR BLOQUEO DE LÍNEA POR USO EN UN ESTABLECIMIENTO PENITENCIARIO:</h2>
+                    <p>"Estimado cliente, podemos verificar que la línea se encuentra suspendida por uso indebido, el titular del servicio debe acercarse a nuestros centros de atención al cliente con su documento de identidad original, para firmar la solicitud del desbloqueo de equipo y reactivación del servicio por uso prohibido ¿Conoce algún centro de atención cercano a usted?"</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('contacto')">19.Cuando algún canal de Bitel se contactó con el Cliente</button>
+                <div id="contacto" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>“(Nombre del cliente), informarle que la llamada al parecer fue de alguna de nuestras áreas, de ser necesario se estarán contactando nuevamente con usted para que le den mayor detalle”.</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('fraude')">20. Mensaje Fraude</button>
+                <div id="fraude" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>“(Nombre del cliente), le informamos que el mensaje recibido por tu línea no ha sido enviado por nuestra empresa ni por ninguna otra vinculada a la nuestra; por tal motivo, le sugerimos hacer caso omiso a ello, dado que la información podría traerle consecuencias negativas”.</p> <br>
+                    <strong>TIPIFICACIÓN:</strong><br><br>             
+                    <img src="img/fraude.jpeg" alt="Descripción de la imagen" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('devolución')">21. Devolución de Llamada</button>
+                <div id="devolución" class="speech-content">
+                    <h2>Detalles</h2>
+                    <p>En información comercial, <b>si la llamada supera los 04:00 minutos</b> y la misma se va a extender, aplicar el speech de devolución de llamada previa autorización del supervisor:</p><br>
+                    <strong>Speech</strong><br>
+                    <p>"(Nombre del cliente), de acuerdo a su consulta permítame devolverle la llamada en este momento para continuar con lo que solicita. Por favor, le devolveremos la llamada al mismo número que del cual se comunica. Le invito a cortar la comunicación”.</p><br>
+                    <strong>ESTA DEVOLUCIÓN NO APLICA PARA:</strong> <br>
+                    <ul>
+                        <li>Suspensión total de la línea y bloqueo de equipo.</li>
+                        <li>Suspensión temporal.</li>
+                        <li>Cambio de numero.</li>
+                        <li>Reclamo.</li>
+                        <li>Migración / Cancelaciones.</p><br>
+                    </ul>
+                    <strong>CONSIDERACIONES:</strong><br>
+                    <ol class="considerations">
+                        <li>La devolución de llamada se aplica con el fin de disminuir el TMO, en caso el cliente NO acepte, se seguirá con el flujo regular de la llamada</li>
+                        <li>También es aplicado en el corte de llamada en donde se estuvieron realizando transacciones operativas (Procesos).</li>
+                        <li>En el corte de llamadas en donde se estuvieron haciendo transacciones operativas como bloqueos, cambio de número, desistimiento de migración u otro similar, debe de realizarse inmediatamente la devolución de la llamada y continuar con la gestión o consultas que habían quedado pendiente en la comunicación; a ello, se tendrá que agregar en las notas de la tipificación, que se procedió con dos gestiones (llamadas) por un corte de llamada (debemos precisar esto de manera puntual).</li>
+                        <li>En el caso de rellamadas en donde el mismo cliente vuelva a ser atendido por el mismo asesor, el agente, debe iniciar la llamada como si fuera una nueva comunicación, siguiendo la estructura normada, incluyendo el escenario que el cliente pueda plantear, así fuese que mencione que ya ha sido atendido por el mismo agente en llamada anterior. Ante esta casuística, se puede usar el siguiente speech:</li>
+                        <li>“Estimado cliente, posiblemente si lo he atendido anteriormente, pero por ser una nueva llamada necesito que me facilite algunos detalles para poder continuar con la comunicación”.</li><br>
+                    </ol>
+                    <strong>ESTRUCTURA DEVOLUCIÓN CONTACTO EFECTIVO:</strong><br>
+                    <p>Número del que llama // Se genera devolución porque consulta sobre xxxxxxx // Contacto efectivo // $$__&&</p><br>
+                    <strong>TIPIFICACIÓN:</strong><br><br>             
+                    <img src="img/efectivo.jpeg" alt="CONTACTO EFECTIVO" class="speech-image"> <br><br><br>
+                    <strong>ESTRUCTURA DEVOLUCIÓN CONTACTO NO EFECTIVO:</strong><br>
+                    <p class="structure">Número del que llama // Se genera devolución porque consulta sobre xxxxxxx // Contacto no efectivo, Id 1, Id2, // $$_Id último intento_&&</p><br>
+                    <strong>TIPIFICACIÓN:</strong> <br><br>
+                    <img src="img/noefectivo.jpeg" alt="CONTACTO NO EFECTIVO" class="speech-image">
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('mailtencionadas')">22. Llamadas Malintencionadas</button>
+                <div id="mailtencionadas" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>"Estimado cliente, en aplicación al Decreto de Urgencia N° 026-2020 y a solicitud del MTC – Ministerio de Transportes y Comunicaciones, su línea ha sido suspendida por un periodo de 30 días calendario por haber realizado llamadas malintencionadas según un reporte de entidades a cargo de las Centrales de Emergencia, Urgencias e Información. Finalmente le comunicamos que su línea será reactivada al culminar el plazo antes mencionado".</p>
+                </div>
+            </div>
+            <div class="speech-item">
+                <button onclick="showSpeech('novalida')">23. No validación de Datos</button>
+                <div id="novalida" class="speech-content">
+                    <h2>Speech</h2>
+                    <p>“(Nombre del cliente)  me encantaría ayudarlo, pero los datos que me ha proporcionado no son los correctos, motivo por el cual no se puede proceder con la atención, lo invitamos a comunicarse nuevamente con los datos correctos y/o visitar uno de nuestros Centros de Atención más cercanos”.</p>
+                </div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
