@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos Control Y Prepago</title>
+    <link rel="icon" href="../../../public/img/logo.png" type="image/x-icon"> <!-- Cambia la ruta según la ubicación de tu imagen -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="requirements.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <h1>SOPORTE DE GESTIÓN</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../../public/index.html">INICIO</a></li>
+                <li><a href="../../../ENCABEZADOS/PromoGBadicionales/promoGB.html">PROMO GB ADICIONALES</a></li>
+                <li><a href="../../../ENCABEZADOS/Herramientas/herramientas.html">HERRAMIENTAS</a></li>
+                <li><a href="../../../ENCABEZADOS/speech/index.html">SPEECHS</a></li>
+                <li><a href="../../../ENCABEZADOS/Anexos/anexos.html">ANEXOS</a></li>
+                <li>
+                    <a href="javascript:void(0);">PROCESOS</a>
+                    <ul class="submenu">
+                      <li><a href="../../../ENCABEZADOS/Reclamo/reclamo.html">Reclamo</a></li>
+                      <li><a href="../../../ENCABEZADOS/CalidadRed/calidad.html">Calidad de Red</a></li>
+                      <li><a href="../../../ENCABEZADOS/SAR/sar.html">SAR</a></li>
+                      <li><a href="../../../ENCABEZADOS/SuspensionTemporal/suspension.html">Suspensión Temporal</a></li>
+                      <li><a href="../../../ENCABEZADOS/Migracion/migracion.html">Migración</a></li>
+                      <li><a href="../../../ENCABEZADOS/Cancelacion/cancelacion.html">Cancelación</a></li>
+                      <li><a href="../../../ENCABEZADOS/Bloqueo/bloqueo.html">Bloqueo</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">PLANTILLA</a>
+                  <ul class="submenu">
+                      <li><a href="../../../ENCABEZADOS/Lista de CAB/index.html">Lista de CAB</a></li>
+                      <li><a href="../../../ENCABEZADOS/Incidencias/Inci.html">Incidencias</a></li>
+                      <li><a href="../../../ENCABEZADOS/Servicios MPS/mps.html">Servicios MPS</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container-men">
+  <h2 class="center">REQUISITOS CONTROL Y PREPAGO</h2>
+
+  <div class="divider1"></div>
+  
+  <!-- Image placeholder -->
+  <div class="contenedor">
+    <img src="img/4g.png" alt="Descripción de la imagen" class="imagen">
+    <p class="costado">Recuerda que todos nuestros planes te otorgan múltiples beneficios. Estos, se encuentran disponibles para la venta al público en general, a nivel nacional, ya sea en Puntos de Venta (PDV), Centros de Atención al Cliente de Bitel (CAB) o Distribuidores Autorizados Bitel (DAB). La venta puede realizarse, sea con equipo o adquiriendo solo el chip en la modalidad Prepago, así como Control.</p>
+  </div>
+  <div class="divider"></div>
+  
+  <h3>REQUISITOS LÍNEAS PREPAGO:</h3>
+  <div id="prepagoAccordion">
+      <div class="card">
+          <div class="card-header" id="prepagoPersonaNatural">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapsePersonaNatural')">
+                      1. PERSONA NATURAL
+                  </button>
+              </h5>
+          </div>
+          <div id="collapsePersonaNatural" class="collapse show">
+              <div class="card-body">
+                  <ul>
+                      <li>DNI, CE o Pasaporte original.</li>
+                      <li>Cliente puede tener 5 líneas prepago.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" id="prepagoPersonaJuridica">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapsePersonaJuridica')">
+                      2. PERSONA JURÍDICA
+                  </button>
+              </h5>
+          </div>
+          <div id="collapsePersonaJuridica" class="collapse">
+              <div class="card-body">
+                  <ul>
+                      <li>RUC (Habido y activo).</li>
+                      <li>DNI, CE o Pasaporte del Representante Legal.</li>
+                      <li>Vigencia de poderes del representante legal no mayor a 3 meses.</li>
+                      <li>El representante puede solicitar líneas ilimitadas, pero esto será validado por el centro de atención.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" id="prepagoRepresentanteAutorizado">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapseRepresentanteAutorizado')">
+                      3. REPRESENTANTE AUTORIZADO (TERCERO)
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseRepresentanteAutorizado" class="collapse">
+              <div class="card-body">
+                  <ul>
+                      <li>DNI, CE o Pasaporte Vigente de la persona que lo representa.</li>
+                      <li>Copia del documento de identidad del titular.</li>
+                      <li>Carta Poder específica Legalizada (especificando la autorización para la firma del contrato de servicios públicos). La misma tendrá una validez máxima de 07 días calendario desde su emisión.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <h3>REQUISITOS LÍNEAS CONTROL:</h3>
+  <div id="controlAccordion">
+      <div class="card">
+          <div class="card-header" id="controlPersonaNatural">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapseControlPersonaNatural')">
+                      1. PERSONA NATURAL
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseControlPersonaNatural" class="collapse show">
+              <div class="card-body">
+                  <ul>
+                      <li>NO TENER DEUDA CON BITEL.</li>
+                      <li>DNI, CE o Pasaporte original.</li>
+                      <li>Pago de renta adelantada (valor igual al cargo fijo).</li>
+                      <li>No hay límite para adquirir líneas (previa evaluación).</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" id="controlPersonaJuridica">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapseControlPersonaJuridica')">
+                      2. PERSONA JURÍDICA
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseControlPersonaJuridica" class="collapse">
+              <div class="card-body">
+                  <ul>
+                      <li>RUC (Habido y Activo).</li>
+                      <li>DNI, CE o Pasaporte del Representante Legal.</li>
+                      <li>Vigencia de poderes del representante legal no mayor a 3 meses.</li>
+                      <li>El representante puede solicitar líneas ilimitadas, pero esto será validado por el centro de atención.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" id="controlRepresentanteAutorizado">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" onclick="toggleCollapse('collapseControlRepresentanteAutorizado')">
+                      3. REPRESENTANTE AUTORIZADO (TERCERO)
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseControlRepresentanteAutorizado" class="collapse">
+              <div class="card-body">
+                  <ul>
+                      <li>DNI, CE o Pasaporte Vigente de la persona que lo representa.</li>
+                      <li>Copia del documento de identidad del titular.</li>
+                      <li>Carta Poder específica Legalizada (señalando la autorización para la firma del contrato de servicios públicos). La misma deberá tener una validez máxima de 07 días calendario desde su emisión.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <p class="fn"><mark class="rojo-suave">RECUERDA:   </mark> <mark>Todos los documentos deben ser originales y vigentes salvo la vigencia de poderes y el DNI, el cual puede estar vigente o no vigente.</mark></p>
+  <div class="divider"></div>
+</main>
+
+
+
+    <footer>
+      <div class="footer-container">
+        <!-- Columna izquierda: Contact Us con información -->
+        <div class="contact-info">
+          <h3 class="contact-title">Contact Us:</h3>
+          <p>Dirección: de Los Nogales 251</p>
+          <p>Contacto: <a href="tel:+51966766495">966766495</a></p>
+          <p>Correo: <a href="mailto:elvissebas39@gmail.com">elvissebas39@gmail.com</a></p>
+          <p>Desarrollador: E. Sebastian</p>
+        </div>
+    
+        <!-- Columna central: enlaces y formulario de suscripción -->
+        <div class="subscribe-container">
+          <!-- Links del menú (horizontal) -->
+          <div class="footer-links">
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contacto</a>
+          </div>
+    
+          <!-- Formulario de suscripción debajo de los enlaces -->
+          <div class="subscribe">
+            <input type="email" placeholder="Email">
+            <button>Suscríbete</button>
+          </div>
+        </div>
+    
+        <!-- Columna derecha: iconos sociales -->
+        <div class="social-media">
+          <a href=""><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    
+      <!-- Línea separativa -->
+      <div class="divider2"></div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2024 Desarrollado por E. Sebastian - Derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="requirements.js" defer></script>
+    <script src="../../../public/estado.js"></script>
+</body>
+</html>

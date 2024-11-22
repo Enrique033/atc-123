@@ -1,0 +1,530 @@
+/* SECCIÓN CONTENEDORES PRINCIPALES*/
+
+.info-center {
+  text-align: center;
+  padding: 0;
+  margin-top: 120px;
+  color: #000;
+  font-size: 30px;
+}
+
+.contenedor-acordeon {
+  width: auto; /* Ajusta esto si necesitas un ancho específico */
+  max-width: 1200px; /* Mantén el ancho máximo */
+  margin: 30px auto; /* Centra horizontalmente */
+  font-family: 'Raleway', sans-serif;
+  margin-top: 60px;
+  height: auto;
+}
+
+.contenedor-acordeon h2 {
+  text-align: left; /* Alinear el título a la izquierda */
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.acordeon {
+  background: #f0f0f0; /* Fondo menos blanco */
+  padding: 2px; /* Elimina el padding */
+}
+
+.acordeon label {
+  display: flex; /* Usar flex para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 15px; /* Espaciado interno */
+  font-size: 1.2em; /* Tamaño de fuente relativo para mejor adaptabilidad */
+  background: #ffab40; /* Fondo naranja más vibrante */
+  color: #2c2c2c; /* Texto oscuro */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  margin-bottom: 2px; /* Espacio entre el label y el contenido */
+  transition: all 300ms ease; /* Transición suave */
+  border: 1px solid #ff9100; /* Borde un poco más oscuro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+.acordeon label:hover {
+  background: #ff9f00; /* Un tono más oscuro al hacer hover */
+  color: #ffffff; /* Cambia el color del texto al blanco */
+  border-color: #ff9100; /* Borde del mismo tono que el hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: scale(1.03); /* Aumento ligero de tamaño */
+  opacity: 0.95; /* Ligera opacidad al hacer hover */
+}
+
+.acordeon input:checked + label {
+  background: #ff6f20; /* Color al mostrar contenido */
+  border-color: #ff5722; /* Borde más oscuro al mostrar contenido */
+}
+
+.acordeon label::after {
+  content: '▶'; /* Icono de flecha */
+  margin-left: auto; /* Empuja el ícono a la derecha */
+  transition: transform 300ms ease; /* Transición suave para el ícono */
+}
+
+.acordeon input:checked + label::after {
+  transform: rotate(90deg); /* Rotar la flecha al abrir */
+}
+
+/* RESPONSIVE PARA CONTENEDORES */
+
+@media (max-width: 768px) {
+  .acordeon label {
+    font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .acordeon label {
+    font-size: 0.9em; /* Tamaño de fuente aún más pequeño en dispositivos móviles */
+    padding: 8px; /* Reduce más el padding */
+  }
+}
+
+
+/*SECCIÓN CONTENIDO-ACORDEÓN Y BTN ACORDEÓN*/
+.acordeon .contenido-acordeon {
+  padding: 0; /* Elimina el padding */
+  margin: 0 20px; /* Mantiene el margen lateral */
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: none;
+  padding: 15px 0; /* Espaciado en la parte superior e inferior */
+  height: auto;
+}
+
+
+
+.btn-acordeon {
+  display: none;
+}
+
+.contenido-acordeon ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+.acordeon.acordeon-especial .contenido-acordeon li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  border-bottom: 2px solid rgb(209, 118, 118); /* Línea roja debajo del texto */
+  padding-bottom: 5px;
+  width: 30%;
+}
+
+
+/*acordeon especial2*/
+.acordeon.acordeon-especial2 .contenido-acordeon li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  border-bottom: 2px solid rgb(209, 118, 118); /* Línea roja debajo del texto */
+  padding-bottom: 5px;
+  width: 40%;
+}
+
+/*acordeon especial3*/
+
+.acordeon.acordeon-especial3 .contenido-acordeon li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  border-bottom: 2px solid rgb(209, 118, 118); /* Línea roja debajo del texto */
+  padding-bottom: 5px;
+  width: 50%;
+}
+
+/*.acordeon.acordeon-especial .contenido-acordeon li:last-child {
+  border-bottom: none; /* Elimina la línea del último elemento solo en acordeones especiales 
+}*/
+
+
+/* CONTENIDO ACORDEON - ICONOS */
+
+.contenido-acordeon-iconos {
+  padding: 0;
+  margin: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease; /* Ajusta el tiempo de transición */
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon-iconos {
+  max-height: 1000px; /* Aumenta el valor de max-height para mayor suavidad */
+  padding: 20px 20px; /* Ajuste del espaciado */
+}
+
+.contenido-acordeon-iconos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contenido-acordeon-iconos li {
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenido-acordeon-iconos li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-acordeon-iconos a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Iconos con fondo y sombras específicas por red social */
+.contenido-acordeon-iconos a.facebook {
+  background-color: #3b5998;
+}
+
+.contenido-acordeon-iconos a.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.contenido-acordeon-iconos a.youtube {
+  background-color: #ff0000;
+}
+
+.contenido-acordeon-iconos a.whatsapp {
+  background-color: #25d366;
+}
+
+.contenido-acordeon-iconos a.tiktok {
+  background-color: #000;
+}
+
+.contenido-acordeon-iconos a.linkedin {
+  background-color: #0077b5;
+}
+
+
+/* Efectos de hover para iconos */
+.contenido-acordeon-iconos a:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contenido del acordeón para Gmail */
+.contenido-acordeon-icon-gmail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Efecto de transición suave al abrir/cerrar */
+}
+
+/* Mostrar contenido del acordeón cuando está desplegado */
+.btn-acordeon:checked ~ .contenido-acordeon-icon-gmail {
+  max-height: 100px; /* Cambia según el contenido */
+  padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para la lista */
+.contenido-acordeon-icon-gmail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 10px; /* Espacio entre ícono y texto */
+}
+
+/* Efecto hover para el ícono */
+.contenido-acordeon-icon-gmail a.gmail:hover .icon {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra al pasar el mouse */
+  transform: scale(1.1); /* Escala del ícono al pasar el mouse */
+}
+
+/* Efecto hover específico para el texto */
+.contenido-acordeon-icon-gmail a.gmail:hover .email-text {
+  color: #d93025; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilo del icono en círculo */
+.contenido-acordeon-icon-gmail .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d93025; /* Color representativo de Gmail */
+  color: #fff; /* Color del ícono */
+  font-size: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efecto de sombra y escala */
+}
+
+/* Estilo del enlace de Gmail */
+.contenido-acordeon-icon-gmail a.gmail {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Elimina subrayado */
+  color: #333; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+/* Estilo del texto del correo */
+.contenido-acordeon-icon-gmail .email-text {
+  margin-left: 10px; /* Espaciado a la izquierda del texto */
+  font-size: 16px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+/* Margen superior para el li */
+.contenido-acordeon-icon-gmail li {
+  margin-top: 15px; /* Ajusta el valor según tus necesidades */
+  margin-bottom: 15px;
+}
+
+
+.info-soporte {
+  width: 100%;
+  max-width: 1500px;
+  padding: 10px;
+  overflow: visible;
+}
+
+/* Contenedor centrado con fondo negro */
+.contenedor-soporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Reducción del padding a los lados */
+  background-color: #2b2b2b; /* Fondo oscuro */
+  border-radius: 15px;
+  width: 80%;
+  max-width: 3500px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  position: relative; /* Para posicionar el borde animado */
+}
+
+mark {
+  background-color: rgba(255, 255, 0, 0.3); /* Amarillo suave y translúcido */
+  color: #333;                              /* Gris oscuro suave para el texto */
+  padding: 0.2em;                           /* Espaciado interno */
+  border-radius: 4px;                       /* Bordes ligeramente redondeados */
+  font-weight: normal;                       /* Texto normal */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.rojo-suave {
+  background-color: rgba(255, 99, 71, 0.4);  /* Rojo suave con opacidad */
+  color: #333;                                /* Gris oscuro para el texto */
+  padding: 2px 4px;                          /* Espaciado interno */
+  border-radius: 4px;                        /* Esquinas redondeadas */
+  font-weight: bold;                          /* Peso de fuente negrita */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); /* Sombra ligera */
+}
+
+
+/* Imagen con borde blanco sólido y animado */
+.imagen-soporte {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px; /* Espacio interno */
+  background: #ffffff; /* Fondo de imagen igual que el contenedor */
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.856); /* Sombra de profundidad */
+}
+
+/* Borde animado */
+.contenedor-soporte::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  border: 8px solid rgba(220, 220, 220, 0.8); /* Borde blanco sólido más grueso */
+  z-index: -1; /* Coloca el borde detrás de la imagen */
+  animation: borderAnimation 4s linear infinite; /* Animación de movimiento */
+}
+
+
+/* Reflejo suave */
+.imagen-soporte::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: inherit;
+  opacity: 0.1;
+  transform: scaleY(-1);
+  filter: blur(3px);
+}
+
+/* Hover: Aumenta la sombra */
+.imagen-soporte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Aumenta la sombra en hover */
+}
+
+
+
+/* Estilos para la lista de información de Info-soporte */
+
+.info-soporte .info-lista {
+  list-style-type: disc; /* Define estilo de bullet */
+  padding-left: 20px;    /* Agrega espacio a la izquierda */
+  margin: 10px 0;        /* Márgenes superior e inferior */
+  font-size: 16px;       /* Tamaño de fuente */
+  color: #333;           /* Color del texto */
+}
+
+.info-soporte .info-lista li {
+  margin-bottom: 10px;   /* Separación entre cada elemento */
+  line-height: 1.5;      /* Altura de línea para legibilidad */
+}
+
+.info-soporte .info-lista a {
+  color: #0066cc;        /* Color del enlace */
+  text-decoration: none; /* Elimina subrayado */
+}
+
+.info-soporte .info-lista a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.info-soporte p, .info-soporte ul, .info-soporte li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+
+/********/
+
+  
+/*SECCIÓN DIVICIÓN*/
+
+  .divider1 {
+    width: 15%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+    padding: 0%;
+    margin-top: 15px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columnas */
+    align-items: flex-start; /* Alinea todos los elementos a la izquierda */
+    margin: 0; /* Asegúrate de que no hay márgenes que causen problemas */
+    padding: 0; /* Asegúrate de que no hay padding que cause problemas */
+}
+
+.divider-inicio {
+  width: 100%; /* Usa el 100% del ancho del contenedor */
+  max-width: 20%; /* Limita el ancho máximo si es necesario */
+  border: 2px solid rgba(231, 122, 20, 0.8); /* Borde sólido */
+  margin: 15px auto; /* Margen vertical y horizontal automático para centrar el div */
+  margin-bottom: 40px;
+  padding: 10px; /* Espacio interno */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  border-radius: 15px; /* Bordes redondeados */
+  text-align: center; /* Centrar texto dentro del div */
+  display: flex; /* Habilita flexbox para centrar elementos */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si hay múltiples líneas */
+  list-style: none; /* Elimina los puntos de lista del elemento li */
+}
+
+.divider3 {
+  width: 100%; /* Usa el 100% del ancho del contenedor */
+  max-width: 45%; /* Limita el ancho máximo si es necesario */
+  border: 2px solid rgba(231, 122, 20, 0.8); /* Borde sólido */
+  margin: 15px 0; /* Margen vertical */
+  padding: 10px; /* Espacio interno */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.divider4 {
+  width: 100%; /* Usa el 100% del ancho del contenedor */
+  max-width: 200px; /* Limita el ancho máximo si es necesario */
+  border: 2px solid rgba(231, 122, 20, 0.8); /* Borde sólido */
+  margin: 15px 0; /* Margen vertical */
+  padding: 10px; /* Espacio interno */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.divider5 {
+  width: 100%; 
+  max-width: 40%; 
+  border: 2px solid rgba(231, 122, 20, 0.8);
+  margin: 15px 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+}
+
+.divider6 {
+  width: 100%; 
+  max-width: 24%; 
+  border: 2px solid rgba(231, 122, 20, 0.8); 
+  margin: 15px 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+}
+
+.divider7 {
+  width: 100%; 
+  max-width: 23%; 
+  border: 2px solid rgba(231, 122, 20, 0.8);
+  margin: 15px 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+}
+
+.divider8 {
+  width: 100%; 
+  max-width: 24%; 
+  border: 2px solid rgba(231, 122, 20, 0.8);
+  margin: 15px 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+}
+
+.divider9 {
+  width: 100%;
+  max-width: 30%; 
+  border: 2px solid rgba(231, 122, 20, 0.8); 
+  margin: 15px 0;
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px;
+}
+

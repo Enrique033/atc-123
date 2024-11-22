@@ -1,0 +1,166 @@
+/*body*/
+
+.promo-content {
+    max-width: 1800px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px; /* Espaciado interno */
+}
+
+.image-container {
+    display: flex; /* Usar flexbox para centrar las imágenes */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding:100px;
+}
+
+.image-container2 {
+    display: flex; /* Usar flexbox para centrar las imágenes */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding:20px;
+}
+
+.promo-content img {
+    max-width: 100%;  /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    display: block; /* Evitar espacios en la parte inferior */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .promo-content {
+        padding: 10px; /* Reducir espaciado interno en pantallas pequeñas */
+    }
+}
+
+
+.promo-content h2 {
+    color: #d61233; /* Color destacado para encabezados */
+    margin: 15px 0; /* Espaciado vertical entre encabezados y párrafos */
+    text-align: center; /* Alinear al centro */
+    font-size: 23px;
+}
+
+.promo-content h3 {
+    color: #d61233; /* Color destacado para encabezados */
+    margin: 15px 0; /* Espaciado vertical entre encabezados y párrafos */
+    text-align: left; /* Alinear a la izquierda */
+    font-size: 23px;
+}
+
+.centrado {
+    text-align: center; /* Centrar texto */
+    color: black;
+    /*font-weight: bold; /* Negrita para énfasis */  /*OPCIONAL*/
+}
+
+
+
+/*lista visible*/
+
+.contenedor-acordeon {
+    width: auto; /* Cambiado a auto para no limitar el ancho */
+    max-width: 1200px;
+    margin: 15px 0 0 0; /* Solo margen superior */
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor-acordeon h2 {
+    text-align: left; /* Alinear el título a la izquierda */
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.acordeon {
+    background: #f0f0f0; /* Fondo menos blanco */
+    padding: 0; /* Elimina el padding */
+}
+
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #3f3e3d;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+
+.acordeon label:hover {
+    background: #383636;
+}
+
+.acordeon .contenido-acordeon {
+    padding: 0; /* Elimina el padding */
+    margin: 0 20px; /* Mantiene el margen lateral */
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+    max-height: 700px;
+    padding: 15px 0; /* Espaciado en la parte superior e inferior */
+}
+
+.btn-acordeon {
+    display: none;
+}
+
+.contenido-acordeon ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+.contenido-acordeon li {
+    position: relative; /* Necesario para el pseudoelemento */
+    margin-bottom: 10px; /* Espaciado entre elementos */
+    line-height: 1.6; /* Mejora la legibilidad */
+    border-bottom: 2px solid rgb(209, 118, 118); /* Línea roja debajo del texto */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+
+.contenido-acordeon li:last-child {
+    border-bottom: none; /* Elimina la línea del último elemento */
+}
+
+
+
+/* Divider */
+.divider1 {
+    width: 85%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+    padding: 0%;
+}
+
+.divider2 {
+    width: 100%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+    padding: 0%;
+}
+
+.divider3 {
+    width: 100%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+    padding: 0%;
+}
+
+/* Tipificación general */
+.promo-content img:last-of-type {
+    margin-bottom: 0; /* Eliminar margen inferior de la última imagen */
+}
+
+strong {
+    color: #FF6F61; 
+    background-color: rgba(255, 105, 97, 0.2);
+    padding: 2px 4px; 
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 30px; /* Ajusta el valor según sea necesario */
+    display: inline-block; /* Necesario para aplicar margin */
+}
+/************/

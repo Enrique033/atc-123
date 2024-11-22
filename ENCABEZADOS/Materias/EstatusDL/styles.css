@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer-container {
+    width: 100%;
+    height: auto; /* Cambiado a auto para ajustarse al contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    max-height: 90vh;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.speech-item {
+    margin-bottom: 20px;
+}
+
+.info-container {
+    margin-top: 10px;
+    text-align: left; /* Cambiar a izquierda */
+}
+
+.info-row {
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    border: 1px solid #c5e1a5;
+    overflow: auto;
+    font-family: monospace;
+    transition: border-color 0.3s;
+}
+
+.info-row:hover {
+    border-color: #66bb6a;
+}
+
+.copy-btn {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.copy-btn:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+.copy-message {
+    display: none;
+    color: #43a047;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.speech-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.speech-image:hover {
+    transform: scale(1.05);
+}
+
+.back-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.back-btn:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}

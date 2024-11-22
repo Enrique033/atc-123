@@ -1,0 +1,166 @@
+@import url(../../../public/H-F.css);
+
+.container-men{
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+}
+.center {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #ec8501;
+    margin: 150px 0 0 0;
+}
+
+/* Contenedor para la imagen y el texto al costado */
+.contenedor {
+    display: flex;                 /* Usamos Flexbox para alinear los elementos */
+    justify-content: flex-start;   /* Alinea los elementos hacia el principio (izquierda) */
+    align-items: center;           /* Centra verticalmente la imagen y el texto */
+    margin-bottom: 30px;           /* Espacio inferior entre esta sección y la siguiente */
+    flex-wrap: wrap;               /* Permite que los elementos se acomoden en múltiples filas */
+}
+
+.imagen {
+    max-width: 45%;                /* Limita el ancho de la imagen al 45% del contenedor */
+    height: auto;                  /* Mantiene la proporción de la imagen */
+    border-radius: 8px;            /* Bordes redondeados para la imagen */
+    margin-right: 20px;            /* Espacio a la derecha de la imagen */
+    margin-bottom: 20px;           /* Añadir un pequeño margen inferior en pantallas pequeñas */
+}
+
+.costado {
+    flex: 1;                        /* El texto ocupará el espacio restante disponible */
+    font-size: 1.1rem;              /* Mejor tamaño de fuente */
+    color: #555;                    /* Color más suave para el texto */
+    line-height: 1.6;               /* Mejora la legibilidad */
+    background-color: #f8f8f8;      /* Fondo suave para el texto */
+    padding: 20px;                  /* Padding alrededor del texto */
+    border-radius: 8px;             /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el efecto visual */
+}
+
+.divider1 {
+    width: 51%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8);
+    padding: 0%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+.divider {
+    width: 99%;
+    border-top: 2px solid rgba(231, 122, 20, 0.8);
+    margin: 20px auto;
+    padding: 0%;
+}
+
+/* Estilo para los encabezados h3 */
+h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;   /* Asegura que los encabezados estén en mayúsculas */
+    font-weight: 600;             /* Mayor peso para un mejor impacto */
+    text-decoration: none;
+}
+
+/* Estilo para las tarjetas del acordeón */
+.card {
+    margin-bottom: 5px;          /* Espacio entre las tarjetas */
+    border-radius: 10px;          /* Bordes redondeados para las tarjetas */
+    border: 1px solid #ddd;      /* Borde gris suave */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-header {
+    background-color: #ec8501;    /* Fondo del encabezado de las tarjetas */
+    color: white;                  /* Color de texto blanco */
+    padding: 10px;                 /* Padding cómodo para los encabezados */
+    font-size: 1.1rem;             /* Aumentamos el tamaño de fuente */
+    border-radius: 10px 10px 0 0;  /* Bordes redondeados en la parte superior */
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 20px;                 /* Padding en el contenido de la tarjeta */
+    background-color: #fafafa;     /* Fondo claro para el contenido */
+}
+
+.card-body ul {
+    padding-left: 20px;            /* Añadimos espacio al principio de las listas */
+}
+
+.card-body li { 
+    margin-bottom: 10px;           /* Espacio entre los elementos de la lista */
+    font-size: 1rem;               /* Ajustamos el tamaño de fuente */
+    color: #555;                   /* Color de texto más suave */
+}
+
+/* Removemos el subrayado por completo */
+.btn-link {
+    color: #333;                   /* Color de texto oscuro */
+    font-size: 1rem;               /* Tamaño de fuente del botón */
+    font-weight: 600;              /* Aumentamos el peso para los botones */
+    text-decoration: none;         /* Quitamos la subrayada */
+    padding: 10px 15px;            /* Padding para un botón cómodo */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    border-radius: 25px;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    background-color: #f5f5f5;     /* Fondo claro al pasar el ratón */
+    color: #ec8501;                /* Cambio de color al pasar el ratón */
+    border-radius: 25px;            /* Bordes redondeados en hover */
+    text-decoration: none;          /* No subrayado al pasar el ratón */
+}
+
+.btn-link:active {
+    text-decoration: none; /* Evita el subrayado en el estado activo */
+}
+
+/* Por defecto, las secciones del acordeón deben estar cerradas */
+.collapse {
+    display: none; /* Asegura que el contenido esté cerrado por defecto */
+}
+
+.collapse.show {
+    display: block; /* Si la sección tiene la clase .show, se debe mostrar */
+}
+
+/* Mejora la apariencia de las listas dentro de los acordeones */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.fn {
+    margin: 40px 40px 40px 0px;
+}
+
+.rojo-suave {
+    background-color: rgba(255, 99, 71, 0.4);  /* Rojo suave con opacidad */
+    color: #333;                                /* Gris oscuro para el texto */
+    padding: 2px 4px;                          /* Espaciado interno */
+    border-radius: 4px;                        /* Esquinas redondeadas */
+    font-weight: bold;                          /* Peso de fuente negrita */
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); /* Sombra ligera */
+}
+
+mark {
+    background-color: rgba(255, 255, 0, 0.3); /* Amarillo suave y translúcido */
+    color: #333;                              /* Gris oscuro suave para el texto */
+    padding: 0.2em;                           /* Espaciado interno */
+    border-radius: 4px;                       /* Bordes ligeramente redondeados */
+    font-weight: normal;                       /* Texto normal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}

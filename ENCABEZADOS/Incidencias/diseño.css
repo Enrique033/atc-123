@@ -1,0 +1,188 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro y suave */
+    color: #333;
+}
+
+header {
+    background-color: #36363a; /* Azul oscuro */
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 15px;
+  color: #ffffff;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.6), 
+               0 2px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  animation: fadeZoomIn 1.2s ease-out forwards;
+  animation-iteration-count: 2; /* Repite la animación dos veces */
+  opacity: 0; /* Comienza invisible */
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    transform: scale(0.8); /* Tamaño reducido */
+    opacity: 0; /* Comienza invisible */
+  }
+  100% {
+    transform: scale(1); /* Escala a tamaño normal */
+    opacity: 1; /* Totalmente visible */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 28px;
+  }
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li:hover a {
+    background-color: #E94560; /* Color vibrante para el hover */
+    transform: translateY(-3px); /* Efecto de elevación */
+    text-decoration: none;
+}
+
+.submenu {
+    display: none; /* Oculta el submenú inicialmente */
+    position: absolute;
+    top: 100%; /* Ajustar para que se vea justo debajo */
+    left: 0;
+    background-color: white; 
+    padding: 5px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease, visibility 0.2s ease; /* Añadir transición */
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* Comienza oculto */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el ratón */
+    opacity: 1; /* Muestra el submenú */
+    visibility: visible; /* Hace visible */
+}
+
+.submenu li {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submenu li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.03); /* Efecto de aumento más sutil */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    flex: 1; /* Permite que el contenedor principal empuje el footer */
+}
+
+.header-container :hover {
+    color: #f0f0f0;
+}
+
+/*Sección Tabla*/
+
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Un azul oscuro para el título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para bordes redondeados */
+}
+
+.tableone {
+    margin-top: 130px; /* Ajusta este valor según la altura de tu encabezado */
+}
+
+
+th {
+    background-color: #ff7f50; /* Color naranja bonito para la celda combinada */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+    padding: 12px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+td:hover {
+    background-color: #ffe4b5; /* Color suave al pasar el mouse */
+    transform: scale(1.011); /* Aumentar el tamaño de la celda */
+    border-radius: 7.5px;
+}
+
+/****/
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto normal */
+}
+
+
+

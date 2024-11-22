@@ -1,0 +1,348 @@
+/* Estilo del encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegura que el html y body ocupen el 100% del alto de la pantalla */
+html, body {
+  height: 100%;  /* Se asegura que body ocupe todo el alto de la ventana */
+  margin: 0;     /* Elimina márgenes predeterminados */
+  display: flex; /* Usa Flexbox para organizar la página */
+  flex-direction: column; /* Organiza el contenido en una columna */
+}
+
+/* Contenedor principal */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el contenido y el footer estén separados */
+}
+header {
+    background-color: #36363a;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 15px;
+  color: #ffffff;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.6), 
+               0 2px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  animation: fadeZoomIn 1.2s ease-out forwards;
+  animation-iteration-count: 1; /* Repite la animación dos veces */
+  opacity: 0; /* Comienza invisible */
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    transform: scale(0.8); /* Tamaño reducido */
+    opacity: 0; /* Comienza invisible */
+  }
+  100% {
+    transform: scale(1); /* Escala a tamaño normal */
+    opacity: 1; /* Totalmente visible */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 28px;
+  }
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li:hover a {
+    background-color: #E94560; /* Color vibrante para el hover */
+    transform: translateY(-3px); /* Efecto de elevación */
+    text-decoration: none;
+}
+
+.submenu {
+    display: none; /* Oculta el submenú inicialmente */
+    position: absolute;
+    top: 100%; /* Ajustar para que se vea justo debajo */
+    left: 0;
+    background-color: white; 
+    padding: 5px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease, visibility 0.2s ease; /* Añadir transición */
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* Comienza oculto */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el ratón */
+    opacity: 1; /* Muestra el submenú */
+    visibility: visible; /* Hace visible */
+}
+
+.submenu li {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submenu li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.03); /* Efecto de aumento más sutil */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    flex: 1; /* Permite que el contenedor principal empuje el footer */
+}
+
+.header-container :hover {
+    color: #f0f0f0;
+}
+
+
+.mark-status {
+  color: #ffffff; /* Color del texto activo */
+  background-color: #007bff; /* Color de fondo azul para activo */
+  font-weight: bold; /* Texto en negrita */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 5px 10px; /* Espaciado interno */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.menu a:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+  color: #ffffff; /* Mantener el color blanco */
+}
+
+
+
+
+/* Estilos del footer */
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    padding: 0;
+    padding-top: 20px; /* Ajusta este valor para mover todo el bloque de párrafos hacia abajo */
+  }
+  
+  .contact-info p {
+    margin: 3px 0; /* Reduce aún más el margen entre párrafos */
+    font-size: 15px; /* Ajusta el tamaño de fuente si es necesario */
+    line-height: 1.2; /* Ajusta el espaciado de línea entre los textos */
+    margin-top: 10px; /* Ajusta este valor para mover el bloque más abajo */
+    padding-top: 1px; /* Ajusta este valor para mover todo el bloque de párrafos hacia abajo */
+  }
+
+  .contact-info :hover{
+    text-decoration: none;
+  }
+  
+  .contact-title {
+    color: #000;
+    background-color: #a5f04d;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(165, 240, 77, 0.5);
+    display: inline-block;
+    font-size: 25px;
+  }
+  
+/* Links del footer (horizontal) */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .footer-links a:hover {
+    color: #a5f04d;
+    text-decoration: none;
+  }
+  
+
+.subscribe-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -900px;
+  }
+
+  .subscribe{
+    padding: 40px;
+  }
+  
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #a5f04d;
+  }
+  
+  /* Estilo del formulario de suscripción */
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .subscribe button {
+    background-color: #a5f04d;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+.divider2 {
+    width: 85%;
+    border-top: 2px solid rgba(238, 236, 235, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+  }
+  
+  .divider4 {
+    width: 85%;
+    border-top: 2px solid rgba(238, 236, 235, 0.8); /* Grosor aumentado a 2px y color más blanco */
+    margin: 20px auto;
+  }
+
+  /* Pie de página */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/*SECCIÓN BARRA DE DESPLZAMIENTO*/
+
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Degradado del pulgar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #4c1a9e, #2b65e6); /* Cambio de color al pasar el cursor */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(45deg, #350e66, #1a45b4); /* Efecto al hacer clic */
+}
+
+
+/* Estilo para el contenido con desplazamiento */
+#scrollable-content {
+  padding: 10px;
+  /* Elimina la altura fija */
+}

@@ -1,0 +1,598 @@
+/* Mantener el contenedor general centrado */
+.contenedor-central {
+  max-width: 60%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el título */
+.herramientas {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 130px;
+}
+
+/* Estilo del encabezado "CONTADOR" */
+.contador h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px; /* Espacio entre el título y la imagen */
+}
+
+/* Flexbox en el contenedor contador */
+.contador {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+  margin-top: 6%;
+}
+
+/* Imagen dentro del contador */
+.contador img {
+  width: 150px; /* Tamaño ajustado de la imagen */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Contenedor de texto a la 
+derecha de la imagen */
+.contador p, .contador .download-instructions {
+  max-width: 400px; /* Limitar ancho de los textos */
+}
+
+/* Ajustes para el texto y las instrucciones de descarga */
+.download-instructions {
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+.video-container h2 {
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+
+}
+
+.video-container iframe {
+  max-width: 100%; /* Asegurarse de que el video sea responsivo */
+}
+
+/* Divider style remains as is */
+
+.divider {
+  width: 49%;
+  border-top: 2px solid rgba(231, 122, 20, 0.8);
+  margin: 20px auto;
+  padding: 0%;
+}
+
+.divider1 {
+  width: 99%;
+  border-top: 2px solid rgba(231, 122, 20, 0.8);
+  margin: 20px auto;
+  padding: 0%;
+}
+
+/*Sección mycc*/
+
+.link-container {
+  display: flex; /* Usar flexbox para alinear la imagen y enlaces en fila */
+  align-items: center; /* Alinear la imagen y enlaces al centro verticalmente */
+  margin: 20px 0;
+}
+
+.mycc {
+  background-color: #fff; /* Fondo blanco para la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno alrededor de la imagen */
+
+  height: auto; /* Mantener la proporción automáticamente */
+  margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.header-container1 {
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  margin-bottom: 20px; /* Aumenta el espacio entre el encabezado y los enlaces */
+  padding: 15px 0; /* Espaciado superior e inferior */
+}
+
+.tex-center {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+  justify-content: center;
+}
+
+.link {
+  background-color: #e0f7fa; /* Fondo bonito */
+  padding: 12px; /* Un poco más de espaciado */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s; /* Efecto hover y transformación */
+  margin-bottom: 10px; /* Espacio entre los enlaces */
+  text-align: center; /* Centrar el texto del enlace */
+  font-weight: bold; /* Hacer el texto más destacado */
+}
+
+.link:hover {
+  background-color: #b2ebf2; /* Efecto hover */
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+
+/*sección CC*/
+
+.link-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+.mycc2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.header-container2 {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+  padding: 15px 0; 
+}
+
+.tex-center2 {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+}
+
+
+.link-CC {
+  background-color: #e0f7fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600; /* Aumenta el grosor de la letra */
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer; /* Muestra el puntero de mano al pasar el mouse */
+  display: inline-block; /* Asegura que se comporte como un botón */
+  max-width: 2000px; /* Limita el ancho máximo */
+  font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+
+span {
+  font-weight: bold;
+  margin-bottom: 8px; /* Aumenta el espacio para separar mejor el texto del enlace */
+  font-size: 1.1em; /* Aumenta ligeramente el tamaño del texto */
+  color: #ff0000; /* Color rojo puro */
+  letter-spacing: 0.5px; /* Espaciado entre letras para mejorar la legibilidad */
+}
+
+.link-CC:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.copy-icon {
+  font-size: 1.2em; /* Ajusta el tamaño del icono */
+  cursor: pointer;
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+  color: #007bff; /* Color del icono */
+  transition: transform 0.2s ease;
+}
+
+.copy-icon:hover {
+  transform: scale(1.2); /* Agranda el icono ligeramente al pasar el mouse */
+  color: #28a745; /* Cambia el color del icono a verde */
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); /* Añade una sombra para destacar */
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease; /* Transición suave */
+}
+
+
+.copy-message {
+  display: none; /* Oculto por defecto */
+  font-size: 0.9em;
+  color: #28a745; /* Color verde para el mensaje */
+  margin-left: 8px;
+  animation: fadeInOut 2s ease; /* Añade una animación suave */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/*Sección myCC*/
+
+.link-container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.item1 {
+  display: flex;
+  width: 100%;
+  gap: 78px;
+}
+
+.mycc1 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.links1 {
+  padding-right: 200px; /* Espacio desde el borde izquierdo del contenedor */
+  width: 350px; /* Define un ancho fijo para el contenedor */
+}
+
+.header-container1 {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+  padding: 15px 0; 
+}
+
+.tex-center1 {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+}
+
+
+.link-CC1 {
+  background-color: #e0f7fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  text-align: left; /* Alinea el texto dentro del enlace a la izquierda */
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-top: 5px;
+  max-width: 500px; /* Limita el ancho del enlace para mantenerlo más cerca de la izquierda */
+}
+
+.link-CC1:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.copy-icon {
+  font-size: 1.2em; /* Ajusta el tamaño del icono */
+  cursor: pointer;
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+  color: #007bff; /* Color del icono */
+  transition: transform 0.2s ease;
+}
+
+.copy-icon:hover {
+  transform: scale(1.2); /* Agranda el icono ligeramente al pasar el mouse */
+  color: #28a745; /* Cambia el color del icono a verde */
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); /* Añade una sombra para destacar */
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease; /* Transición suave */
+}
+
+
+/*sección PS*/
+
+.link-container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.item2 {
+  display: flex;
+  width: 100%; 
+}
+
+.mycc3 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.links3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 7%; 
+}
+
+.header-container3 {
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  margin-bottom: 20px; /* Aumenta el espacio entre el encabezado y los enlaces */
+  padding: 15px 0; /* Espaciado superior e inferior */
+}
+
+.tex-center3 {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+}
+
+.copy-icon {
+  margin-left: 10px; /* Espacio entre el texto y el ícono de copiado */
+  cursor: pointer;
+}
+
+.copy-message {
+  display: none;
+  font-size: 0.9em;
+  color: #28a745;
+  margin-left: 8px;
+  animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.link-CC2 {
+  background-color: #e0f7fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  text-align: center;
+  color: #007bff;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.link-CC2:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+
+/*Sección WEB BITEL*/
+
+.link-container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 78px; /* Separación entre la imagen y el bloque de enlaces */
+  width: 100%;
+}
+
+.mycc5 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.links5 {
+  padding-right: 400px; /* Espacio desde el borde izquierdo del contenedor */
+  width: 650px; /* Define un ancho fijo para el contenedor */
+}
+
+.header-container5 {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+  padding: 15px 0; 
+}
+
+.tex-center5 {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+}
+
+
+.link-CC5 {
+  background-color: #e0f7fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  text-align: left; /* Alinea el texto dentro del enlace a la izquierda */
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-top: 5px;
+  max-width: 220px; /* Limita el ancho del enlace para mantenerlo más cerca de la izquierda */
+}
+
+.web {
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio entre el título y el enlace */
+  font-size: 1.1em;
+  color: #181717;
+  letter-spacing: 0.5px;
+}
+
+.link-CC5:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.copy-icon {
+  font-size: 1.2em; /* Ajusta el tamaño del icono */
+  cursor: pointer;
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+  color: #007bff; /* Color del icono */
+  transition: transform 0.2s ease;
+}
+
+.copy-icon:hover {
+  transform: scale(1.2); /* Agranda el icono ligeramente al pasar el mouse */
+  color: #28a745; /* Cambia el color del icono a verde */
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); /* Añade una sombra para destacar */
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease; /* Transición suave */
+}
+
+
+/*Sección VERIFICACIÓN*/
+
+.link-container6 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.item6 {
+  display: flex;
+  align-items: center;
+  gap: 78px; /* Separación entre la imagen y el bloque de enlaces */
+  width: 100%;
+}
+
+.mycc6 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.links6 {
+  padding-right: 1700px; /* Espacio desde el borde izquierdo del contenedor */
+  width: 1900px; /* Define un ancho fijo para el contenedor */
+}
+
+.header-container6 {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+  padding: 15px 0; 
+}
+
+.tex-center6 {
+  padding: 15px 20px; /* Espacio interno adicional */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.6em; /* Tamaño de fuente ligeramente mayor */
+  color: #333; /* Color de texto más oscuro para mejor legibilidad */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  margin: 0;
+}
+
+
+.link-CC6 {
+  background-color: #e0f7fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  text-align: left; /* Alinea el texto dentro del enlace a la izquierda */
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-top: 5px;
+  max-width: 480px; /* Limita el ancho del enlace para mantenerlo más cerca de la izquierda */
+}
+
+.web {
+  font-weight: bold;
+  margin-bottom: 100px; /* Espacio entre el título y el enlace */
+  font-size: 1.1em;
+  color: #181717;
+  letter-spacing: 0.5px;
+}
+
+.link-CC6:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/************/
+

@@ -1,0 +1,86 @@
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .container-men {
+        width: 80%; /* Aumentar el ancho del contenedor en pantallas medianas */
+        margin-left: 10%; /* Centramos mejor el contenedor */
+    }
+
+    .center {
+        font-size: 2rem; /* Reducir el tamaño del texto */
+        margin: 100px 0 0 0; /* Reducir el margen superior */
+    }
+
+    .contenedor {
+        flex-direction: column;  /* En pantallas medianas, la imagen y el texto estarán uno encima del otro */
+        align-items: center;      /* Alineación al centro */
+    }
+
+    .imagen {
+        max-width: 80%;           /* Aumentar el tamaño de la imagen en pantallas medianas */
+        margin-bottom: 15px;      /* Espacio debajo de la imagen */
+    }
+
+    .costado {
+        font-size: 1rem;          /* Reducir el tamaño del texto */
+    }
+
+    h3 {
+        font-size: 1.2rem;        /* Reducir el tamaño de los encabezados */
+    }
+
+    .card-header {
+        font-size: 1rem;          /* Reducir tamaño de fuente en pantallas medianas */
+        padding: 12px;            /* Reducir el padding */
+    }
+
+    .card-body {
+        padding: 15px;            /* Reducir padding de las tarjetas */
+    }
+
+    .fn {
+        margin: 30px;             /* Ajustar el margen de la sección */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container-men {
+        width: 100%; /* Contenedor más ancho en pantallas pequeñas */
+        margin-left: 0; /* Eliminar margen izquierdo */
+    }
+
+    .center {
+        font-size: 1.6rem; /* Reducir aún más el tamaño de texto */
+        margin: 50px 0;     /* Reducir el margen superior */
+    }
+
+    .contenedor {
+        flex-direction: column;  /* En pantallas pequeñas, la imagen y el texto estarán uno encima del otro */
+    }
+
+    .imagen {
+        max-width: 100%;         /* La imagen ocupa el 100% */
+        margin-bottom: 15px;     /* Espacio debajo de la imagen */
+    }
+
+    .costado {
+        margin-left: 0;          /* Eliminar márgenes innecesarios */
+        font-size: 1rem;         /* Reducir el tamaño del texto */
+    }
+
+    h3 {
+        font-size: 1.1rem;       /* Reducir tamaño de los encabezados */
+    }
+
+    .card-header {
+        font-size: 0.95rem;      /* Reducir tamaño de los encabezados */
+    }
+
+    .card-body {
+        padding: 12px;           /* Reducir el padding */
+    }
+
+    .fn {
+        margin: 20px 20px;       /* Reducir márgenes en pantallas muy pequeñas */
+    }
+}
